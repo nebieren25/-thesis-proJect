@@ -1,0 +1,4 @@
+model,unique_words,three_plus_token_words,percentage
+berturk,317,49,15.46
+mbert,317,181,57.1
+xlmr,317,94,29.65

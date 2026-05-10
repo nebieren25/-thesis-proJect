@@ -1,0 +1,501 @@
+QID,W1,W2,Sim,Rel,S,D,R,U,SR,DR,SU,DU,AVG-C,W1F,W2F,AnyOOV,TwoOOV,EstSyn,EstAnt,EstRHigh,EstRMed,EstRLow,EstHyp,EstMer,W1-RWG,W2-RWG,RWMin,W1-DG,W2-DG,DGMax,W1-IG,W2-IG,IGMax,word1_subtokens,word2_subtokens,word1_fragmented,word2_fragmented,word1_tokens,word2_tokens
+1,mızrap,barınak,"0,166666667","0,083333333",False,True,False,True,False,False,False,True,"6,15",150,890,FALSE,FALSE,0,0,0,0,1,0,0,2,3,2,0,1,1,0,0,0,2,2,True,True,"['mız', '##rap']","['barın', '##ak']"
+2,kırmızı,gül,"1,166666667","7,166666667",False,True,True,False,False,True,False,False,,56298,64994,FALSE,FALSE,0,0,1,0,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['kırmızı'],['gül']
+3,suçlu,şüphe,"2,416666667",7,False,True,True,False,False,True,False,False,"4,69",13535,9721,FALSE,FALSE,0,0,1,0,0,0,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['suçlu'],['şüphe']
+4,laikçiler,sekülerizmciler,9,"9,416666667",True,False,True,False,True,False,False,False,,66,0,TRUE,FALSE,1,0,1,0,0,0,0,2,0,0,2,0,2,0,0,0,2,4,True,True,"['laik', '##çiler']","['sek', '##üler', '##izm', '##ciler']"
+5,bitki,zeytin,"3,666666667","6,75",False,True,True,False,False,True,False,False,"6,6",11980,7488,FALSE,FALSE,0,0,0,1,0,1,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['bitki'],['zeytin']
+6,serin,soğuk,"7,25","8,833333333",True,False,True,False,True,False,False,False,"5,03",3675,37223,FALSE,FALSE,1,0,1,0,0,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['serin'],['soğuk']
+7,gül,pamuk,"2,083333333","3,583333333",False,True,False,True,False,False,False,True,"6,79",64994,17842,FALSE,FALSE,0,0,0,1,0,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['gül'],['pamuk']
+8,içki,alkol,"7,75","9,083333333",True,False,True,False,True,False,False,False,"6,44",16126,16236,FALSE,FALSE,0,0,1,0,0,1,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['içki'],['alkol']
+9,köle,serbest,"0,333333333","6,5",False,True,True,False,False,True,False,False,,3000,87614,FALSE,FALSE,0,1,1,0,0,0,0,3,5,3,0,0,0,0,0,0,1,1,False,False,['köle'],['serbest']
+10,saray,pıhtı,"0,333333333","0,166666667",False,True,False,True,False,False,False,True,"6,56",21135,325,FALSE,FALSE,0,0,0,0,1,0,0,4,2,2,0,0,0,0,0,0,1,2,False,True,['saray'],"['p', '##ıhtı']"
+11,affedişi,bağışlayışı,"9,083333333",9,True,False,True,False,True,False,False,False,,1,0,TRUE,FALSE,1,0,1,0,0,0,0,1,0,0,2,2,2,1,1,1,2,3,True,True,"['affed', '##işi']","['bağış', '##layış', '##ı']"
+12,sofra,zeytin,"1,75","7,166666667",False,True,True,False,False,True,False,False,"6,37",2120,7488,FALSE,FALSE,0,0,0,1,0,0,1,3,4,3,0,0,0,0,0,0,1,1,False,False,['sofra'],['zeytin']
+13,eşya,gözlük,"2,333333333",6,False,True,True,False,False,True,False,False,"6,56",18174,3238,FALSE,FALSE,0,0,0,1,0,1,0,4,3,3,0,1,1,0,0,0,1,1,False,False,['eşya'],['gözlük']
+14,meslek,mühendis,"2,416666667","6,916666667",False,True,True,False,False,True,False,False,,63185,7509,FALSE,FALSE,0,0,0,1,0,1,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['meslek'],['mühendis']
+15,savunmaktaydılar,korumaktaydılar,"8,166666667","8,5",True,False,True,False,True,False,False,False,,5,2,FALSE,FALSE,1,0,1,0,0,0,0,1,1,1,1,1,1,2,2,2,3,3,True,True,"['savunmak', '##taydı', '##lar']","['korumak', '##taydı', '##lar']"
+16,peynir,ipek,"0,833333333","0,5",False,True,False,True,False,False,False,True,"6,88",7434,10942,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['peynir'],['ipek']
+17,turizm,seyahat,"4,5","8,25",False,True,True,False,False,True,False,False,"3,28",55821,15936,FALSE,FALSE,0,0,1,0,0,0,0,5,4,4,1,0,1,0,0,0,1,1,False,False,['turizm'],['seyahat']
+18,tıknaz,uyumlu,"0,166666667","0,833333333",False,True,False,True,False,False,False,True,,124,18774,FALSE,FALSE,0,0,0,0,1,0,0,2,4,2,0,1,1,0,0,0,2,1,True,False,"['tık', '##naz']",['uyumlu']
+19,kemalci,atatürkist,"8,75","9,636363636",True,False,True,False,True,False,False,False,,59,0,TRUE,FALSE,1,0,1,0,0,0,0,2,0,0,1,1,1,0,0,0,2,2,True,True,"['kemal', '##ci']","['atatürk', '##ist']"
+20,polis,yardım,"3,333333333","7,583333333",False,True,True,False,False,True,False,False,"6,55",93497,100548,FALSE,FALSE,0,0,0,1,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['polis'],['yardım']
+21,gürültü,otobüs,"0,916666667",5,False,True,True,False,False,True,False,False,"5,29",6332,15906,FALSE,FALSE,0,0,0,1,0,0,0,4,4,4,2,0,2,0,0,0,1,1,False,False,['gürültü'],['otobüs']
+22,temiz,titiz,"7,833333333","9,166666667",True,False,True,False,True,False,False,False,"3,89",23343,4640,FALSE,FALSE,0,0,1,0,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['temiz'],['titiz']
+23,kitaplıklar,kitap,"3,5","8,75",False,True,True,False,False,True,False,False,,84,70642,FALSE,FALSE,0,0,1,0,0,0,1,2,5,2,1,0,1,1,0,1,2,1,True,False,"['kitap', '##lıklar']",['kitap']
+24,böcek,karınca,"3,5","7,333333333",False,True,True,False,False,True,False,False,,2994,2158,FALSE,FALSE,0,0,0,1,0,0,0,3,3,3,0,0,0,0,0,0,1,1,False,False,['böcek'],['karınca']
+25,gazete,kitap,"4,916666667","7,166666667",False,True,True,False,False,True,False,False,"6,81",49607,70642,FALSE,FALSE,0,0,0,1,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['gazete'],['kitap']
+26,okul,kordon,"0,25","1,083333333",False,True,False,True,False,False,False,True,"6,6",55774,1701,FALSE,FALSE,0,0,0,0,1,0,0,5,3,3,0,0,0,0,0,0,1,2,False,True,['okul'],"['kor', '##don']"
+27,ibadet,oruç,"5,416666667","8,25",True,False,True,False,True,False,False,False,"2,67",5116,7029,FALSE,FALSE,0,0,1,0,0,1,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['ibadet'],['oruç']
+28,varlık,hayvan,"2,416666667","5,5",False,True,True,False,False,True,False,False,"3,78",14909,22519,FALSE,FALSE,0,0,0,1,0,1,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['varlık'],['hayvan']
+29,tüketim,üretim,"0,25","8,5",False,True,True,False,False,True,False,False,"3,73",24279,70594,FALSE,FALSE,0,1,1,0,0,0,0,4,5,4,1,1,1,0,0,0,1,1,False,False,['tüketim'],['üretim']
+30,sihirbaz,büyücü,"7,583333333","7,333333333",True,False,True,False,True,False,False,False,,943,922,FALSE,FALSE,1,0,0,1,0,0,0,3,3,3,1,1,1,0,0,0,2,2,True,True,"['sihir', '##baz']","['büyü', '##cü']"
+31,giysi,gömlek,"4,333333333","7,416666667",False,True,True,False,False,True,False,False,"6,54",2773,4340,FALSE,FALSE,0,0,0,1,0,1,0,3,4,3,1,0,1,0,0,0,1,1,False,False,['giysi'],['gömlek']
+32,hayvan,tavuk,"3,333333333","7,25",False,True,True,False,False,True,False,False,"6,49",22519,11603,FALSE,FALSE,0,0,0,1,0,1,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['hayvan'],['tavuk']
+33,sevgili,çiçek,"1,166666667","6,5",False,True,True,False,False,True,False,False,"4,69",37193,33522,FALSE,FALSE,0,0,1,0,0,0,0,5,5,5,1,0,1,0,0,0,1,1,False,False,['sevgili'],['çiçek']
+34,turizm,ekonomi,2,"5,833333333",False,True,True,False,False,True,False,False,"3,28",55821,72584,FALSE,FALSE,0,0,1,0,0,0,0,5,5,5,1,0,1,0,0,0,1,1,False,False,['turizm'],['ekonomi']
+35,eski,yeni,"0,166666667",9,False,True,True,False,False,True,False,False,,249377,770145,FALSE,FALSE,0,1,1,0,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['eski'],['yeni']
+36,yüzük,sevgili,"1,416666667","6,083333333",False,True,True,False,False,True,False,False,"6,81",3197,37193,FALSE,FALSE,0,0,0,1,0,0,0,3,5,3,0,1,1,0,0,0,1,1,False,False,['yüzük'],['sevgili']
+37,primatçaları,maymunsuları,"6,333333333","8,166666667",True,False,True,False,True,False,False,False,,0,0,TRUE,TRUE,1,0,1,0,0,0,0,0,0,0,1,2,2,2,2,2,4,3,True,True,"['prim', '##at', '##ça', '##ları']","['maymun', '##sul', '##arı']"
+38,bilimci,faiz,"0,25","0,333333333",False,True,False,True,False,False,False,True,"5,46",1213,96787,FALSE,FALSE,0,0,0,0,1,0,0,3,5,3,2,0,2,0,0,0,2,1,True,False,"['bilim', '##ci']",['faiz']
+39,gündüz,öğle,"4,5","8,166666667",False,True,True,False,False,True,False,False,,16396,14001,FALSE,FALSE,0,0,1,0,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['gündüz'],['öğle']
+40,otomobil,taksi,"5,833333333","8,583333333",True,False,True,False,True,False,False,False,,46731,7692,FALSE,FALSE,0,0,1,0,0,1,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['otomobil'],['taksi']
+41,çare,sos,1,"1,25",False,True,False,True,False,False,False,True,,12319,2820,FALSE,FALSE,0,0,0,0,1,0,0,4,3,3,0,0,0,0,0,0,1,1,False,False,['çare'],['sos']
+42,evrensel,sos,"0,583333333","0,916666667",False,True,False,True,False,False,False,True,"2,2",15287,2820,FALSE,FALSE,0,0,0,0,1,0,0,4,3,3,1,0,1,0,0,0,1,1,False,False,['evrensel'],['sos']
+43,viski,varlık,"0,833333333","0,833333333",False,True,False,True,False,False,False,True,"6,83",1693,14909,FALSE,FALSE,0,0,0,1,0,0,0,3,4,3,0,1,1,0,0,0,2,1,True,False,"['v', '##iski']",['varlık']
+44,alacaklanmak,tabure,"0,25","0,083333333",False,True,False,True,False,False,False,True,,0,136,TRUE,FALSE,0,0,0,0,1,0,0,0,2,0,1,0,1,1,0,1,2,2,True,True,"['alacak', '##lanmak']","['tabur', '##e']"
+45,sebze,enginar,"3,583333333","7,25",False,True,True,False,False,True,False,False,"6,71",12357,1068,FALSE,FALSE,0,0,0,1,0,1,0,4,3,3,0,0,0,0,0,0,1,2,False,True,['sebze'],"['engin', '##ar']"
+46,damar,rahatsız,"0,583333333","3,75",False,True,False,True,False,False,False,True,"6,52",15392,35800,FALSE,FALSE,0,0,0,1,0,0,0,4,5,4,0,1,1,0,0,0,1,1,False,False,['damar'],['rahatsız']
+47,öğrenci,yağcılık,"0,416666667",4,False,True,False,True,False,False,False,True,"6,18",67682,163,FALSE,FALSE,0,0,0,1,0,0,0,5,2,2,1,2,2,0,0,0,1,2,False,True,['öğrenci'],"['yağ', '##cılık']"
+48,bitki,sebze,"3,666666667","7,333333333",False,True,True,False,False,True,False,False,"6,6",11980,12357,FALSE,FALSE,0,0,0,1,0,0,1,4,4,4,0,0,0,0,0,0,1,1,False,False,['bitki'],['sebze']
+49,zarar,tımarhane,"0,333333333","1,083333333",False,True,False,True,False,False,False,True,"2,41",70292,113,FALSE,FALSE,0,0,0,0,1,0,0,5,2,2,0,1,1,0,0,0,1,3,False,True,['zarar'],"['t', '##ımar', '##hane']"
+50,kelebek,eski,"0,166666667","0,083333333",False,True,False,True,False,False,False,True,"6,8",3657,249377,FALSE,FALSE,0,0,0,0,1,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['kelebek'],['eski']
+51,zaman,gündüz,"2,5","7,166666667",False,True,True,False,False,True,False,False,"2,19",495060,16396,FALSE,FALSE,0,0,0,1,0,1,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['zaman'],['gündüz']
+52,meslek,polis,"2,833333333","7,083333333",False,True,True,False,False,True,False,False,,63185,93497,FALSE,FALSE,0,0,0,1,0,1,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['meslek'],['polis']
+53,su,yağmur,"4,25",8,False,True,True,False,False,True,False,False,"6,8",129707,22203,FALSE,FALSE,0,0,1,0,0,0,1,5,4,4,0,0,0,0,0,0,1,1,False,False,['su'],['yağmur']
+54,nefes,soyut,"0,666666667","0,833333333",False,True,False,True,False,False,False,True,"5,68",20542,4801,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['nefes'],['soyut']
+55,yedigen,aykırı,"0,25","0,416666667",False,True,False,True,False,False,False,True,,0,41324,TRUE,FALSE,0,0,0,0,1,0,0,0,5,0,1,0,1,0,0,0,2,1,True,False,"['yedi', '##gen']",['aykırı']
+56,titiz,pimpirikli,"6,25","6,833333333",True,False,True,False,True,False,False,False,"2,48",4640,25,FALSE,FALSE,1,0,1,0,0,0,0,4,1,1,0,1,1,0,0,0,1,4,False,True,['titiz'],"['pi', '##m', '##pir', '##ikli']"
+57,fotoğraf,karton,1,"3,833333333",False,True,False,True,False,False,False,True,"6,62",80225,1467,FALSE,FALSE,0,0,0,1,0,0,0,5,3,3,0,0,0,0,0,0,1,1,False,False,['fotoğraf'],['karton']
+58,tutsak,serbest,"0,25","8,416666667",False,True,True,False,False,True,False,False,,1783,87614,FALSE,FALSE,0,1,0,1,0,0,0,3,5,3,1,0,1,0,0,0,1,1,False,False,['tutsak'],['serbest']
+59,fazlalık,ısınmış,"0,166666667","1,333333333",False,True,False,True,False,False,False,True,"3,99",1000,273,FALSE,FALSE,0,0,0,0,1,0,0,3,2,2,1,2,2,0,0,0,2,2,True,True,"['fazla', '##lık']","['ısın', '##mış']"
+60,laikçiler,tepe,"0,25","0,454545455",False,True,False,True,False,False,False,True,,66,7356,FALSE,FALSE,0,0,0,0,1,0,0,2,4,2,2,0,2,0,0,0,2,1,True,False,"['laik', '##çiler']",['tepe']
+61,suçlu,bağışlayışı,"0,416666667","6,25",False,True,True,False,False,True,False,False,"4,69",13535,0,TRUE,FALSE,0,0,1,0,0,0,0,4,0,0,1,2,2,0,1,1,1,3,False,True,['suçlu'],"['bağış', '##layış', '##ı']"
+62,serbest,radyo,"0,166666667","1,727272727",False,True,False,True,False,False,False,True,"2,09",87614,31478,FALSE,FALSE,0,0,0,0,1,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['serbest'],['radyo']
+63,uzun,tıknaz,"0,166666667","4,333333333",False,True,False,True,False,False,False,True,,230525,124,FALSE,FALSE,0,1,1,0,0,0,0,5,2,2,0,0,0,0,0,0,1,2,False,True,['uzun'],"['tık', '##naz']"
+64,kan,pıhtı,"2,916666667","7,833333333",False,True,True,False,False,True,False,False,"6,7",54264,325,FALSE,FALSE,0,0,0,1,0,0,0,5,2,2,0,0,0,0,0,0,1,2,False,True,['kan'],"['p', '##ıhtı']"
+65,delilim,ispatım,"9,166666667","9,5",True,False,True,False,True,False,False,False,,11,5,FALSE,FALSE,1,0,1,0,0,0,0,1,1,1,0,0,0,1,1,1,2,2,True,True,"['delil', '##im']","['ispat', '##ım']"
+66,erkekçene,eksik,"0,166666667","0,5",False,True,False,True,False,False,False,True,,1,29303,FALSE,FALSE,0,0,0,0,1,0,0,1,4,1,2,1,2,0,0,0,3,1,True,False,"['erkek', '##çe', '##ne']",['eksik']
+67,delilim,deli,"0,666666667","0,833333333",False,True,False,True,False,False,False,True,,11,15669,FALSE,FALSE,0,0,0,0,1,0,0,1,4,1,0,0,0,1,0,1,2,1,True,False,"['delil', '##im']",['deli']
+68,üşengeç,üşengen,"8,25","7,833333333",True,False,True,False,True,False,False,False,"3,06",47,0,TRUE,FALSE,1,0,1,0,0,0,0,2,0,0,1,1,1,0,0,0,3,3,True,True,"['üş', '##en', '##geç']","['üş', '##en', '##gen']"
+69,gül,dostçasına,"0,25","2,083333333",False,True,False,True,False,False,False,True,"6,79",64994,0,TRUE,FALSE,0,0,0,1,0,0,0,5,0,0,0,0,0,0,0,0,1,3,False,True,['gül'],"['dost', '##çası', '##na']"
+70,kum,karınca,"1,166666667","4,5",False,True,False,True,False,False,False,True,"6,62",6726,2158,FALSE,FALSE,0,0,0,1,0,0,0,4,3,3,0,0,0,0,0,0,1,1,False,False,['kum'],['karınca']
+71,tutsak,köle,7,"9,25",True,False,True,False,True,False,False,False,,1783,3000,FALSE,FALSE,1,0,1,0,0,0,0,3,3,3,1,0,1,0,0,0,1,1,False,False,['tutsak'],['köle']
+72,kazanç,aykırı,"0,166666667","0,666666667",False,True,False,True,False,False,False,True,"4,1",12123,41324,FALSE,FALSE,0,0,0,0,1,0,0,4,5,4,1,0,1,0,0,0,1,1,False,False,['kazanç'],['aykırı']
+73,içki,viski,"4,25","8,583333333",False,True,True,False,False,True,False,False,"6,44",16126,1693,FALSE,FALSE,0,0,1,0,0,1,0,4,3,3,1,0,1,0,0,0,1,2,False,True,['içki'],"['v', '##iski']"
+74,üşengen,yedigen,"0,166666667","0,25",False,True,False,True,False,False,False,True,0,0,0,TRUE,TRUE,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,3,2,True,True,"['üş', '##en', '##gen']","['yedi', '##gen']"
+75,mutfak,kahvaltı,2,"7,083333333",False,True,True,False,False,True,False,False,"6,75",9902,6430,FALSE,FALSE,0,0,0,1,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['mutfak'],['kahvaltı']
+76,çamaşır,külot,"4,75",8,False,True,True,False,False,True,False,False,,4839,291,FALSE,FALSE,1,0,1,0,0,1,0,4,2,2,0,0,0,0,0,0,1,2,False,True,['çamaşır'],"['kül', '##ot']"
+77,yorgun,yorgunluk,"4,916666667","8,916666667",False,True,True,False,False,True,False,False,"3,41",7932,4796,FALSE,FALSE,0,0,1,0,0,0,0,4,4,4,1,2,2,0,0,0,1,1,False,False,['yorgun'],['yorgunluk']
+78,transparan,kemik,"0,166666667","0,583333333",False,True,False,True,False,False,False,True,,597,9289,FALSE,FALSE,0,0,0,0,1,0,1,3,4,3,0,0,0,0,0,0,3,1,True,False,"['trans', '##para', '##n']",['kemik']
+79,muz,yoğurt,"1,166666667","3,416666667",False,True,False,True,False,False,False,True,"6,92",2917,5450,FALSE,FALSE,0,0,0,1,0,0,0,3,4,3,0,0,0,0,0,0,1,1,False,False,['muz'],['yoğurt']
+80,damar,kan,"2,333333333","8,416666667",False,True,True,False,False,True,False,False,"6,52",15392,54264,FALSE,FALSE,0,0,1,0,0,0,1,4,5,4,0,0,0,0,0,0,1,1,False,False,['damar'],['kan']
+81,ilkellik,cenin,"0,333333333","1,416666667",False,True,False,True,False,False,False,True,,167,1560,FALSE,FALSE,0,0,0,0,1,0,0,2,3,2,0,0,0,0,0,0,2,2,True,True,"['ilkel', '##lik']","['cen', '##in']"
+82,temiz,kirlice,"0,25","7,333333333",False,True,True,False,False,True,False,False,"3,89",23343,0,TRUE,FALSE,0,1,1,0,0,0,0,4,0,0,0,1,1,0,0,0,1,2,False,True,['temiz'],"['kirli', '##ce']"
+83,modernite,öncülük,"1,916666667","5,333333333",False,True,True,False,False,True,False,False,,560,4570,FALSE,FALSE,0,0,0,1,0,0,0,3,4,3,0,2,2,0,0,0,2,1,True,False,"['modern', '##ite']",['öncülük']
+84,peşinatsız,borçlanmak,"1,416666667",6,False,True,True,False,False,True,False,False,"3,83",127,528,FALSE,FALSE,0,0,1,0,0,0,0,2,3,2,2,1,2,0,1,1,3,2,True,True,"['peşin', '##ats', '##ız']","['borçlanma', '##k']"
+85,öğrenci,kitap,"1,416666667","7,333333333",False,True,True,False,False,True,False,False,"6,18",67682,70642,FALSE,FALSE,0,0,1,0,0,0,0,5,5,5,1,0,1,0,0,0,1,1,False,False,['öğrenci'],['kitap']
+86,mühendis,bilişim,"2,333333333","6,833333333",False,True,True,False,False,True,False,False,"5,49",7509,19208,FALSE,FALSE,0,0,0,1,0,0,0,4,4,4,0,2,2,0,0,0,1,1,False,False,['mühendis'],['bilişim']
+87,zeki,çocuk,"0,833333333","5,25",False,True,True,False,False,True,False,False,"2,29",25139,137866,FALSE,FALSE,0,0,0,1,0,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['zeki'],['çocuk']
+88,avare,başıboş,"8,416666667","9,25",True,False,True,False,True,False,False,False,"3,07",460,1234,FALSE,FALSE,1,0,1,0,0,0,0,3,3,3,0,0,0,0,0,0,2,3,True,True,"['av', '##are']","['başı', '##bo', '##ş']"
+89,tren,inançlılık,"0,166666667","0,166666667",False,True,False,True,False,False,False,True,"6,9",14751,6,FALSE,FALSE,0,0,0,0,1,0,0,4,1,1,0,2,2,0,0,0,1,2,False,True,['tren'],"['inanç', '##lılık']"
+90,mücevher,şahane,"0,5","2,75",False,True,False,True,False,False,False,True,,2332,3655,FALSE,FALSE,0,0,0,1,0,0,0,3,4,3,0,0,0,0,0,0,1,1,False,False,['mücevher'],['şahane']
+91,başladılarsa,bitirdilerse,"0,083333333","7,916666667",False,True,True,False,False,True,False,False,,19,5,FALSE,FALSE,0,1,1,0,0,0,0,1,1,1,0,1,1,2,0,2,2,2,True,True,"['başladılar', '##sa']","['bitirdi', '##lerse']"
+92,keşiş,köle,"0,583333333","1,833333333",False,True,False,True,False,False,False,True,,306,3000,FALSE,FALSE,0,0,0,0,1,0,0,2,3,2,0,0,0,0,0,0,2,1,True,False,"['keş', '##iş']",['köle']
+93,palto,ceket,"6,75",8,True,False,True,False,True,False,False,False,"6,77",855,2581,FALSE,FALSE,1,0,1,0,0,0,0,3,3,3,0,0,0,0,0,0,2,1,True,False,"['pal', '##to']",['ceket']
+94,oksijen,su,2,"7,666666667",False,True,True,False,False,True,False,False,"5,69",6174,129707,FALSE,FALSE,0,0,0,1,0,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['oksijen'],['su']
+95,taşıt,tren,"3,583333333","8,166666667",False,True,True,False,False,True,False,False,"6,63",10701,14751,FALSE,FALSE,0,0,0,1,0,1,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['taşıt'],['tren']
+96,kıyı,tepe,"0,916666667","4,083333333",False,True,False,True,False,False,False,True,,5868,7356,FALSE,FALSE,0,0,0,1,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['kıyı'],['tepe']
+97,adalet,vicdan,"2,833333333","6,5",False,True,True,False,False,True,False,False,,59379,5873,FALSE,FALSE,0,0,0,1,0,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['adalet'],['vicdan']
+98,rahatsız,alışkın,"0,166666667","4,416666667",False,True,False,True,False,False,False,True,,35800,1678,FALSE,FALSE,0,0,0,1,0,0,0,5,3,3,1,2,2,0,0,0,1,2,False,True,['rahatsız'],"['alış', '##kın']"
+99,kavramsallaştırsın,soyut,1,"4,818181818",False,True,False,True,False,False,False,True,,0,4801,TRUE,FALSE,0,0,1,0,0,0,0,0,4,0,2,0,2,1,0,1,4,1,True,False,"['kavram', '##sal', '##laştır', '##sın']",['soyut']
+100,hayat,fani,"1,583333333","7,083333333",False,True,True,False,False,True,False,False,3,65846,1028,FALSE,FALSE,0,0,1,0,0,0,0,5,3,3,0,0,0,0,0,0,1,2,False,True,['hayat'],"['fan', '##i']"
+101,ıslak,deniz,"1,833333333","6,666666667",False,True,True,False,False,True,False,False,,3612,116696,FALSE,FALSE,0,0,1,0,0,0,1,4,5,4,0,0,0,0,0,0,1,1,False,False,['ıslak'],['deniz']
+102,kitaplıklar,kitaphane,"7,166666667","8,416666667",True,False,True,False,True,False,False,False,,84,1,FALSE,FALSE,1,0,1,0,0,0,0,2,1,1,1,1,1,1,0,1,2,2,True,True,"['kitap', '##lıklar']","['kitap', '##hane']"
+103,din,vicdan,"1,75","5,416666667",False,True,True,False,False,True,False,False,"2,22",51607,5873,FALSE,FALSE,0,0,0,1,0,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['din'],['vicdan']
+104,brüt,çamaşır,"0,25","0,083333333",False,True,False,True,False,False,False,True,,7022,4839,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['brüt'],['çamaşır']
+105,tıknaz,şiddetli,"0,333333333","0,166666667",False,True,False,True,False,False,False,True,,124,14198,FALSE,FALSE,0,0,0,0,1,0,0,2,4,2,0,1,1,0,0,0,2,1,True,False,"['tık', '##naz']",['şiddetli']
+106,yüreklicesine,gevşek,"0,166666667","0,25",False,True,False,True,False,False,False,True,,0,2089,TRUE,FALSE,0,0,0,0,1,0,0,0,3,0,0,0,0,0,0,0,3,2,True,True,"['yürek', '##lic', '##esine']","['gevş', '##ek']"
+107,cenin,kuyumcu,"0,166666667","0,083333333",False,True,False,True,False,False,False,True,,1560,1472,FALSE,FALSE,0,0,0,0,1,0,0,3,3,3,0,1,1,0,0,0,2,3,True,True,"['cen', '##in']","['kuyu', '##m', '##cu']"
+108,gözlükçü,gözlük,"2,75","8,75",False,True,True,False,False,True,False,False,0,96,3238,FALSE,FALSE,0,0,1,0,0,0,1,2,3,2,2,1,2,0,0,0,2,1,True,False,"['gözlük', '##çü']",['gözlük']
+109,affedişi,cezalandırışı,"0,166666667","7,166666667",False,True,True,False,False,True,False,False,,1,1,FALSE,FALSE,0,1,1,0,0,0,0,1,1,1,2,2,2,1,1,1,2,2,True,True,"['affed', '##işi']","['cezalandır', '##ışı']"
+110,bilişim,sebze,"0,25","0,166666667",False,True,False,True,False,False,False,True,"3,7",19208,12357,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,2,0,2,0,0,0,1,1,False,False,['bilişim'],['sebze']
+111,iktidarcılar,sabahlardaki,"0,166666667","0,166666667",False,True,False,True,False,False,False,True,,1,2,FALSE,FALSE,0,0,0,0,1,0,0,1,1,1,1,0,1,1,2,2,2,2,True,True,"['iktidar', '##cılar']","['sabah', '##lardaki']"
+112,cinayetindeki,asosyalleştirdikleri,"0,166666667","0,25",False,True,False,True,False,False,False,True,,51,0,TRUE,FALSE,0,0,0,0,1,0,0,2,0,0,0,2,2,2,2,2,3,4,True,True,"['cinayeti', '##nde', '##ki']","['as', '##osyal', '##leştir', '##dikleri']"
+113,zarar,kazanç,"0,083333333","8,416666667",False,True,True,False,False,True,False,False,"2,41",70292,12123,FALSE,FALSE,0,1,1,0,0,0,0,5,4,4,0,1,1,0,0,0,1,1,False,False,['zarar'],['kazanç']
+114,kuş,turna,"3,333333333","7,833333333",False,True,True,False,False,True,False,False,"6,81",29836,551,FALSE,FALSE,0,0,1,0,0,1,0,4,3,3,0,0,0,0,0,0,1,2,False,True,['kuş'],"['turn', '##a']"
+115,brüt,kesintili,"0,333333333","6,363636364",False,True,True,False,False,True,False,False,,7022,237,FALSE,FALSE,0,1,1,0,0,0,0,4,2,2,0,2,2,0,0,0,1,2,False,True,['brüt'],"['kesinti', '##li']"
+116,borçlanmak,faiz,"1,416666667","6,416666667",False,True,True,False,False,True,False,False,,528,96787,FALSE,FALSE,0,0,1,0,0,0,0,3,5,3,1,0,1,1,0,1,2,1,True,False,"['borçlanma', '##k']",['faiz']
+117,zaman,öğle,"2,833333333","7,333333333",False,True,True,False,False,True,False,False,"2,19",495060,14001,FALSE,FALSE,0,0,0,0,1,1,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['zaman'],['öğle']
+118,mücevher,sicim,"0,333333333",1,False,True,False,True,False,False,False,True,,2332,257,FALSE,FALSE,0,0,0,0,1,0,0,3,2,2,0,0,0,0,0,0,1,2,False,True,['mücevher'],"['si', '##cim']"
+119,külot,aile,"0,25","0,25",False,True,False,True,False,False,False,True,"6,89",291,68301,FALSE,FALSE,0,0,0,0,1,0,0,2,5,2,0,0,0,0,0,0,2,1,True,False,"['kül', '##ot']",['aile']
+120,mezarhane,mutfak,"0,25","0,166666667",False,True,False,True,False,False,False,True,,1,9902,FALSE,FALSE,0,0,0,0,1,0,0,1,4,1,0,0,0,0,0,0,2,1,True,False,"['mezar', '##hane']",['mutfak']
+121,bitirdilerse,geceleyin,"0,166666667","1,583333333",False,True,False,True,False,False,False,True,,5,533,FALSE,FALSE,0,0,0,0,1,0,0,1,3,1,1,2,2,0,0,0,2,2,True,True,"['bitirdi', '##lerse']","['gece', '##leyin']"
+122,yoldaş,delikanlı,"0,833333333","2,333333333",False,True,False,True,False,False,False,True,,894,5217,FALSE,FALSE,0,0,0,1,0,0,0,3,4,3,1,0,1,0,0,0,1,1,False,False,['yoldaş'],['delikanlı']
+123,ıslak,serin,"1,75",5,False,True,True,False,False,True,False,False,,3612,3675,FALSE,FALSE,0,0,0,1,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['ıslak'],['serin']
+124,barınak,tımarhane,"0,666666667","1,083333333",False,True,False,True,False,False,False,True,"6,43",890,113,FALSE,FALSE,0,0,0,1,0,0,0,3,2,2,1,1,1,0,0,0,2,3,True,True,"['barın', '##ak']","['t', '##ımar', '##hane']"
+125,zarar,kadın,"0,25","0,416666667",False,True,False,True,False,False,False,True,"2,41",70292,156275,FALSE,FALSE,0,0,0,0,1,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['zarar'],['kadın']
+126,atletik,avare,"0,333333333","0,166666667",False,True,False,True,False,False,False,True,"4,56",760,460,FALSE,FALSE,0,0,0,0,1,0,0,3,3,3,1,0,1,0,0,0,2,2,True,True,"['atlet', '##ik']","['av', '##are']"
+127,cansız,yaşlıymışçasına,"0,916666667",2,False,True,False,True,False,False,False,True,"5,29",2023,0,TRUE,FALSE,0,0,0,1,0,0,0,3,0,0,1,0,1,0,0,0,1,4,False,True,['cansız'],"['yaşlı', '##ymış', '##çası', '##na']"
+128,peynir,karton,"0,25","0,416666667",False,True,False,True,False,False,False,True,"6,88",7434,1467,FALSE,FALSE,0,0,0,0,1,0,0,4,3,3,0,0,0,0,0,0,1,1,False,False,['peynir'],['karton']
+129,süreli,süresiz,"0,083333333","8,583333333",False,True,True,False,False,True,False,False,,19345,2757,FALSE,FALSE,0,1,1,0,0,0,0,4,3,3,0,1,1,0,0,0,1,2,False,True,['süreli'],"['süresi', '##z']"
+130,tutsak,özgür,"0,083333333","8,666666667",False,True,True,False,False,True,False,False,,1783,28827,FALSE,FALSE,0,1,1,0,0,0,0,3,4,3,1,0,1,0,0,0,1,1,False,False,['tutsak'],['özgür']
+131,gevşek,heykel,"0,166666667","0,166666667",False,True,False,True,False,False,False,True,,2089,6983,FALSE,FALSE,0,0,0,0,1,0,0,3,4,3,0,0,0,0,0,0,2,1,True,False,"['gevş', '##ek']",['heykel']
+132,kamyon,sesteş,"0,083333333","0,083333333",False,True,False,True,False,False,False,True,"6,96",8715,12,FALSE,FALSE,0,0,0,0,1,0,0,4,1,1,0,1,1,0,0,0,1,2,False,True,['kamyon'],"['ses', '##teş']"
+133,yiyecek,sos,"2,666666667","7,166666667",False,True,True,False,False,True,False,False,,10836,2820,FALSE,FALSE,0,0,0,1,0,0,1,4,3,3,0,0,0,0,0,0,1,1,False,False,['yiyecek'],['sos']
+134,modernite,ilkellik,"0,25",6,False,True,True,False,False,True,False,False,,560,167,FALSE,FALSE,0,1,1,0,0,0,0,3,2,2,0,0,0,0,0,0,2,2,True,True,"['modern', '##ite']","['ilkel', '##lik']"
+135,keşiş,kahin,"3,083333333","5,25",False,True,True,False,False,True,False,False,,306,477,FALSE,FALSE,0,0,0,1,0,0,0,2,3,2,0,0,0,0,0,0,2,2,True,True,"['keş', '##iş']","['kah', '##in']"
+136,turna,uygulamak,"0,166666667","0,083333333",False,True,False,True,False,False,False,True,,551,6566,FALSE,FALSE,0,0,0,0,1,0,0,3,4,3,0,1,1,0,0,0,2,1,True,False,"['turn', '##a']",['uygulamak']
+137,ormanlık,fotoğraf,"0,416666667","2,5",False,True,False,True,False,False,False,True,,2575,80225,FALSE,FALSE,0,0,0,1,0,0,0,3,5,3,1,0,1,0,0,0,1,1,False,False,['ormanlık'],['fotoğraf']
+138,sosyalleştirdikleri,asosyalleştirdikleri,"0,083333333","8,166666667",False,True,True,False,False,True,False,False,,0,0,TRUE,TRUE,0,1,1,0,0,0,0,0,0,0,2,2,2,2,2,2,3,4,True,True,"['sosyal', '##leştir', '##dikleri']","['as', '##osyal', '##leştir', '##dikleri']"
+139,cinayetindeki,kemik,"0,25","2,166666667",False,True,False,True,False,False,False,True,,51,9289,FALSE,FALSE,0,0,0,0,1,0,0,2,4,2,0,0,0,2,0,2,3,1,True,False,"['cinayeti', '##nde', '##ki']",['kemik']
+140,masum,kuşku,"0,416666667","4,75",False,True,False,True,False,False,False,True,,12698,7530,FALSE,FALSE,0,0,1,0,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['masum'],['kuşku']
+141,delikanlı,büyücü,"0,25","0,166666667",False,True,False,True,False,False,False,True,,5217,922,FALSE,FALSE,0,0,0,0,1,0,0,4,3,3,0,1,1,0,0,0,1,2,False,True,['delikanlı'],"['büyü', '##cü']"
+142,uzun,atletik,"3,083333333","5,916666667",False,True,True,False,False,True,False,False,,230525,760,FALSE,FALSE,0,0,0,1,0,0,0,5,3,3,0,1,1,0,0,0,1,2,False,True,['uzun'],"['atlet', '##ik']"
+143,deniz,sahil,5,"8,666666667",True,False,True,False,True,False,False,False,"6,57",116696,9500,FALSE,FALSE,0,0,1,0,0,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['deniz'],['sahil']
+144,orman,meyve,"1,416666667","6,166666667",False,True,True,False,False,True,False,False,"6,57",29908,17748,FALSE,FALSE,0,0,1,0,0,0,1,4,4,4,0,0,0,0,0,0,1,1,False,False,['orman'],['meyve']
+145,hayat,nefes,"3,083333333","7,583333333",False,True,True,False,False,True,False,False,3,65846,20542,FALSE,FALSE,0,0,1,0,0,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['hayat'],['nefes']
+146,mızrap,tabure,"0,25","0,5",False,True,False,True,False,False,False,True,"6,15",150,136,FALSE,FALSE,0,0,0,0,1,0,0,2,2,2,0,0,0,0,0,0,2,2,True,True,"['mız', '##rap']","['tabur', '##e']"
+147,sıcak,ısınmış,"7,5","8,333333333",True,False,True,False,True,False,False,False,,561440,273,FALSE,FALSE,1,0,1,0,0,0,0,5,2,2,0,2,2,0,0,0,1,2,False,True,['sıcak'],"['ısın', '##mış']"
+148,gülüş,gülümseme,"8,75","9,166666667",True,False,True,False,True,False,False,False,"4,66",506,1548,FALSE,FALSE,1,0,1,0,0,0,0,3,3,3,1,2,2,0,0,0,1,2,False,True,['gülüş'],"['gülümsem', '##e']"
+149,muz,gemicik,"0,583333333","0,666666667",False,True,False,True,False,False,False,True,"6,92",2917,1,FALSE,FALSE,0,0,0,0,1,0,0,3,1,1,0,1,1,0,0,0,1,2,False,True,['muz'],"['gemi', '##cik']"
+150,hukuk,hayat,"0,416666667","2,166666667",False,True,False,True,False,False,False,True,"3,79",71683,65846,FALSE,FALSE,0,0,0,1,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['hukuk'],['hayat']
+151,evetçiler,hayırcılar,0,"9,333333333",False,True,True,False,False,True,False,False,,50,87,FALSE,FALSE,0,1,1,0,0,0,0,2,2,2,1,1,1,1,1,1,2,2,True,True,"['evet', '##çiler']","['hayır', '##cılar']"
+152,kamyon,manken,"0,25","0,166666667",False,True,False,True,False,False,False,True,"6,96",8715,9006,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['kamyon'],['manken']
+153,terazi,adalet,2,"6,833333333",False,True,True,False,False,True,False,False,"6,58",2139,59379,FALSE,FALSE,0,0,1,0,0,0,0,3,5,3,0,0,0,0,0,0,2,1,True,False,"['ter', '##azi']",['adalet']
+154,sarsıcı,gençmişçesine,"0,166666667","0,25",False,True,False,True,False,False,False,True,"2,68",1229,0,TRUE,FALSE,0,0,0,0,1,0,0,3,0,0,2,2,2,0,0,0,2,4,True,True,"['sars', '##ıcı']","['genç', '##miş', '##çesi', '##ne']"
+155,uzak,yakın,0,"9,25",False,True,True,False,False,True,False,False,"2,87",57989,153814,FALSE,FALSE,0,1,1,0,0,0,0,5,5,5,0,1,1,0,0,0,1,1,False,False,['uzak'],['yakın']
+156,dükkan,vitrin,"2,333333333","7,545454545",False,True,True,False,False,True,False,False,,5370,1725,FALSE,FALSE,0,0,1,0,0,0,1,4,3,3,0,0,0,0,0,0,1,1,False,False,['dükkan'],['vitrin']
+157,nefes,oksijen,"3,75","8,166666667",False,True,True,False,False,True,False,False,"5,68",20542,6174,FALSE,FALSE,0,0,1,0,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['nefes'],['oksijen']
+158,enginar,boza,"0,75","3,083333333",False,True,False,True,False,False,False,True,"6,74",1068,392,FALSE,FALSE,0,0,0,0,1,0,0,3,3,3,0,0,0,0,0,0,2,2,True,True,"['engin', '##ar']","['boz', '##a']"
+159,giysi,külot,"2,916666667","6,916666667",False,True,True,False,False,True,False,False,"6,54",2773,291,FALSE,FALSE,0,0,0,1,0,1,0,3,2,2,1,0,1,0,0,0,1,2,False,True,['giysi'],"['kül', '##ot']"
+160,deneyimleme,pratikleştirsin,"1,916666667","4,75",False,True,False,True,False,False,False,True,,20,0,TRUE,FALSE,0,0,1,0,0,0,0,1,0,0,2,2,2,0,1,1,2,3,True,True,"['deneyim', '##leme']","['pratik', '##leştir', '##sin']"
+161,sahil,ormanlık,"0,666666667","3,75",False,True,False,True,False,False,False,True,"6,38",9500,2575,FALSE,FALSE,0,0,0,1,0,0,0,4,3,3,0,1,1,0,0,0,1,1,False,False,['sahil'],['ormanlık']
+162,masum,öldürülüşündeki,"0,25","2,916666667",False,True,False,True,False,False,False,True,,12698,2,FALSE,FALSE,0,0,1,0,0,0,0,4,1,1,0,2,2,0,2,2,1,3,False,True,['masum'],"['öldürül', '##üş', '##ündeki']"
+163,siyah,petrol,"0,75","5,833333333",False,True,True,False,False,True,False,False,,51232,91273,FALSE,FALSE,0,0,1,0,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['siyah'],['petrol']
+164,haşarı,enerjik,"3,5","5,75",False,True,True,False,False,True,False,False,"2,85",236,1699,FALSE,FALSE,0,0,0,1,0,0,0,2,3,2,0,1,1,0,0,0,2,2,True,True,"['haş', '##arı']","['enerji', '##k']"
+165,teizm,müzik,"0,25","0,25",False,True,False,True,False,False,False,True,,27,83849,FALSE,FALSE,0,0,0,0,1,0,0,1,5,1,1,0,1,0,0,0,2,1,True,False,"['te', '##izm']",['müzik']
+166,para,faiz,"2,166666667","6,666666667",False,True,True,False,False,True,False,False,"6,41",207792,96787,FALSE,FALSE,0,0,1,0,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['para'],['faiz']
+167,normalleşiyor,sabahlardaki,"0,166666667","0,166666667",False,True,False,True,False,False,False,True,,61,2,FALSE,FALSE,0,0,0,0,1,0,0,2,1,1,1,0,1,1,2,2,2,2,True,True,"['normal', '##leşiyor']","['sabah', '##lardaki']"
+168,atatürkçülerden,kemalizmcilerden,"9,083333333","8,916666667",True,False,True,False,True,False,False,False,,6,0,TRUE,FALSE,0,0,0,1,0,0,0,1,0,0,1,2,2,2,2,2,3,4,True,True,"['atatürk', '##çü', '##lerden']","['kemal', '##izm', '##ciler', '##den']"
+169,alkol,viski,"4,363636364","8,833333333",False,True,True,False,False,True,False,False,,16236,1693,FALSE,FALSE,0,0,1,0,0,0,1,4,3,3,0,0,0,0,0,0,1,2,False,True,['alkol'],"['v', '##iski']"
+170,muhalefetçiler,iktidarcılar,"0,083333333","8,916666667",False,True,True,False,False,True,False,False,,0,1,TRUE,FALSE,0,1,0,1,0,0,0,0,1,0,1,1,1,1,1,1,2,2,True,True,"['muhalefet', '##çiler']","['iktidar', '##cılar']"
+171,horoz,tavuk,"5,916666667",9,True,False,True,False,True,False,False,False,,1814,11603,FALSE,FALSE,0,0,1,0,0,0,0,3,4,3,0,0,0,0,0,0,2,1,True,False,"['hor', '##oz']",['tavuk']
+172,çerçeve,fotoğraf,"2,916666667","8,5",False,True,True,False,False,True,False,False,"6,76",17814,80225,FALSE,FALSE,0,0,1,0,0,0,1,4,5,4,0,0,0,0,0,0,1,1,False,False,['çerçeve'],['fotoğraf']
+173,süt,lokanta,"1,083333333","3,416666667",False,True,False,True,False,False,False,True,"6,79",19593,3743,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['süt'],['lokanta']
+174,tahta,tabure,"1,583333333","6,583333333",False,True,True,False,False,True,False,False,"6,94",6150,136,FALSE,FALSE,0,0,1,0,0,0,1,4,2,2,0,0,0,0,0,0,1,2,False,True,['tahta'],"['tabur', '##e']"
+175,kağıt,karton,"4,416666667","7,833333333",False,True,True,False,False,True,False,False,"6,83",14940,1467,FALSE,FALSE,1,0,1,0,0,0,0,4,3,3,0,0,0,0,0,0,1,1,False,False,['kağıt'],['karton']
+176,varlık,para,"4,666666667","7,666666667",False,True,True,False,False,True,False,False,"3,78",14909,207792,FALSE,FALSE,0,0,0,1,0,0,0,4,5,4,1,0,1,0,0,0,1,1,False,False,['varlık'],['para']
+177,ses,sesteş,"3,166666667","6,416666667",False,True,True,False,False,True,False,False,"5,45",57760,12,FALSE,FALSE,0,0,0,0,1,0,0,5,1,1,0,1,1,0,0,0,1,2,False,True,['ses'],"['ses', '##teş']"
+178,eksik,ilaç,"0,166666667","0,333333333",False,True,False,True,False,False,False,True,,29303,42220,FALSE,FALSE,0,0,0,0,1,0,0,4,5,4,1,0,1,0,0,0,1,1,False,False,['eksik'],['ilaç']
+179,eşya,cisim,"5,166666667",7,True,False,True,False,True,False,False,False,"6,56",18174,2265,FALSE,FALSE,0,0,0,1,0,1,0,4,3,3,0,0,0,0,0,0,1,1,False,False,['eşya'],['cisim']
+180,haber,uzun,"0,333333333","0,916666667",False,True,False,True,False,False,False,True,"4,55",119460,230525,FALSE,FALSE,0,0,0,0,1,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['haber'],['uzun']
+181,hayırcılar,barıştırılırken,"0,166666667","1,333333333",False,True,False,True,False,False,False,True,,87,2,FALSE,FALSE,0,0,0,0,1,0,0,2,1,1,1,2,2,1,0,1,2,3,True,True,"['hayır', '##cılar']","['barış', '##tır', '##ılırken']"
+182,pamuk,giysi,"1,25",7,False,True,True,False,False,True,False,False,"6,77",17842,2773,FALSE,FALSE,0,0,0,1,0,0,1,4,3,3,0,1,1,0,0,0,1,1,False,False,['pamuk'],['giysi']
+183,hamile,cenin,"2,333333333","7,916666667",False,True,True,False,False,True,False,False,,12317,1560,FALSE,FALSE,0,0,1,0,0,0,1,4,3,3,0,0,0,0,0,0,1,2,False,True,['hamile'],"['cen', '##in']"
+184,ispatım,almışlardır,"0,181818182","0,25",False,True,False,True,False,False,False,True,,5,1038,FALSE,FALSE,0,0,0,0,1,0,0,1,3,1,0,0,0,1,2,2,2,2,True,True,"['ispat', '##ım']","['almış', '##lardır']"
+185,süt,yoğurt,"3,833333333","8,5",False,True,True,False,False,True,False,False,"6,79",19593,5450,FALSE,FALSE,0,0,1,0,0,0,1,4,4,4,0,0,0,0,0,0,1,1,False,False,['süt'],['yoğurt']
+186,cansız,enerjik,"0,083333333",7,False,True,True,False,False,True,False,False,"5,29",2023,1699,FALSE,FALSE,0,1,1,0,0,0,0,3,3,3,1,1,1,0,0,0,1,2,False,True,['cansız'],"['enerji', '##k']"
+187,sahil,kum,"2,583333333","8,583333333",False,True,True,False,False,True,False,False,"6,38",9500,6726,FALSE,FALSE,0,0,1,0,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['sahil'],['kum']
+188,ses,mızrap,"0,833333333","5,833333333",False,True,True,False,False,True,False,False,"5,45",57760,150,FALSE,FALSE,0,0,0,1,0,0,0,5,2,2,0,0,0,0,0,0,1,2,False,True,['ses'],"['mız', '##rap']"
+189,davadaş,ebediyeten,"0,5","1,25",False,True,False,True,False,False,False,True,,0,2,TRUE,FALSE,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,2,3,True,True,"['davada', '##ş']","['ebedi', '##yet', '##en']"
+190,bitki,çiçek,"4,416666667","7,916666667",False,True,True,False,False,True,False,False,"6,6",11980,33522,FALSE,FALSE,0,0,0,1,0,1,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['bitki'],['çiçek']
+191,seyahat,sefer,"5,583333333","8,166666667",True,False,True,False,True,False,False,False,,15936,24702,FALSE,FALSE,0,0,1,0,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['seyahat'],['sefer']
+192,yardım,aile,"0,583333333","4,25",False,True,False,True,False,False,False,True,"2,92",100548,68301,FALSE,FALSE,0,0,0,1,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['yardım'],['aile']
+193,petrol,yakıt,"5,25",9,True,False,True,False,True,False,False,False,"6,56",91273,12371,FALSE,FALSE,0,0,1,0,0,0,1,5,4,4,0,1,1,0,0,0,1,1,False,False,['petrol'],['yakıt']
+194,şair,modernite,"0,583333333","2,083333333",False,True,False,True,False,False,False,True,"5,59",17028,560,FALSE,FALSE,0,0,0,0,1,0,0,4,3,3,0,0,0,0,0,0,1,2,False,True,['şair'],"['modern', '##ite']"
+195,gevşek,sıkı,0,"9,166666667",False,True,True,False,False,True,False,False,,2089,29614,FALSE,FALSE,0,1,1,0,0,0,0,3,4,3,0,1,1,0,0,0,2,1,True,False,"['gevş', '##ek']",['sıkı']
+196,cihaz,lamba,2,"6,083333333",False,True,True,False,False,True,False,False,"6,43",9397,1579,FALSE,FALSE,0,0,0,1,0,1,0,4,3,3,0,0,0,0,0,0,1,1,False,False,['cihaz'],['lamba']
+197,din,devlet,"0,5","6,166666667",False,True,True,False,False,True,False,False,"2,22",51607,336669,FALSE,FALSE,0,0,1,0,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['din'],['devlet']
+198,saldırmaktaydılar,suskunluğuna,"0,166666667","1,75",False,True,False,True,False,False,False,True,,0,103,TRUE,FALSE,0,0,0,0,1,0,0,0,2,0,1,2,2,2,2,2,4,3,True,True,"['saldır', '##makta', '##ydı', '##lar']","['sus', '##kun', '##luğuna']"
+199,nezle,yorgunluk,"1,416666667","5,583333333",False,True,True,False,False,True,False,False,"5,2",1168,4796,FALSE,FALSE,0,0,0,1,0,0,0,3,4,3,0,2,2,0,0,0,2,1,True,False,"['nez', '##le']",['yorgunluk']
+200,cevher,fotoğraf,"0,25","0,166666667",False,True,False,True,False,False,False,True,,1957,80225,FALSE,FALSE,0,0,0,0,1,0,0,3,5,3,0,0,0,0,0,0,2,1,True,False,"['cev', '##her']",['fotoğraf']
+201,uzak,karınca,"0,166666667","0,166666667",False,True,False,True,False,False,False,True,"2,87",57989,2158,FALSE,FALSE,0,0,0,0,1,0,0,5,3,3,0,0,0,0,0,0,1,1,False,False,['uzak'],['karınca']
+202,üşengeç,ebleh,"0,583333333","2,25",False,True,False,True,False,False,False,True,"3,06",47,61,FALSE,FALSE,0,0,0,0,1,0,0,2,2,2,1,0,1,0,0,0,3,3,True,True,"['üş', '##en', '##geç']","['eb', '##le', '##h']"
+203,yedigen,biçimlendirilmişlerdir,"0,333333333",1,False,True,False,True,False,False,False,True,,0,1,TRUE,FALSE,0,0,1,0,0,0,0,0,1,0,1,2,2,0,2,2,2,4,True,True,"['yedi', '##gen']","['biçim', '##lendir', '##ilmiş', '##lerdir']"
+204,bilimci,karışık,"0,166666667","1,083333333",False,True,False,True,False,False,False,True,"5,46",1213,12017,FALSE,FALSE,0,0,0,0,1,0,0,3,4,3,2,2,2,0,0,0,2,1,True,False,"['bilim', '##ci']",['karışık']
+205,medya,sevgili,"0,25","1,25",False,True,False,True,False,False,False,True,"4,68",43326,37193,FALSE,FALSE,0,0,0,0,1,0,0,5,5,5,0,1,1,0,0,0,1,1,False,False,['medya'],['sevgili']
+206,biçimlendirilmişlerdir,iyiliyorsun,"0,583333333","0,75",False,True,False,True,False,False,False,True,,1,0,TRUE,FALSE,0,0,0,0,1,0,0,1,0,0,2,1,2,2,2,2,4,3,True,True,"['biçim', '##lendir', '##ilmiş', '##lerdir']","['iyi', '##liyor', '##sun']"
+207,kırmızı,okul,"0,166666667","0,083333333",False,True,False,True,False,False,False,True,,56298,55774,FALSE,FALSE,0,0,0,0,1,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['kırmızı'],['okul']
+208,gülümseme,somurtma,0,"8,916666667",False,True,True,False,False,True,False,False,,1548,7,FALSE,FALSE,0,1,1,0,0,0,0,3,1,1,2,1,2,0,0,0,2,3,True,True,"['gülümsem', '##e']","['som', '##urt', '##ma']"
+209,okul,kitaplıklar,"1,333333333","7,5",False,True,True,False,False,True,False,False,"6,6",55774,84,FALSE,FALSE,0,0,0,1,0,0,1,5,2,2,0,1,1,0,1,1,1,2,False,True,['okul'],"['kitap', '##lıklar']"
+210,atatürkçülerden,palto,"0,25","1,083333333",False,True,False,True,False,False,False,True,,6,855,FALSE,FALSE,0,0,0,0,1,0,0,1,3,1,1,0,1,2,0,2,3,2,True,True,"['atatürk', '##çü', '##lerden']","['pal', '##to']"
+211,kadeh,bıçak,"1,75","4,666666667",False,True,False,True,False,False,False,True,"6,75",2684,8509,FALSE,FALSE,0,0,0,1,0,0,0,3,4,3,0,0,0,0,0,0,1,1,False,False,['kadeh'],['bıçak']
+212,özgür,haber,"0,833333333",6,False,True,True,False,False,True,False,False,,28827,119460,FALSE,FALSE,0,0,0,1,0,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['özgür'],['haber']
+213,palto,kapüşon,"2,666666667","7,5",False,True,True,False,False,True,False,False,"6,77",855,5,FALSE,FALSE,0,0,1,0,0,0,1,3,1,1,0,0,0,0,0,0,2,3,True,True,"['pal', '##to']","['kap', '##üş', '##on']"
+214,ibadet,namaz,"4,25","8,333333333",False,True,True,False,False,True,False,False,"2,67",5116,6615,FALSE,FALSE,0,0,1,0,0,1,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['ibadet'],['namaz']
+215,soyut,somut,0,"9,25",False,True,True,False,False,True,False,False,,4801,23545,FALSE,FALSE,0,1,1,0,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['soyut'],['somut']
+216,süresiz,ebediyeten,"7,416666667","9,166666667",True,False,True,False,True,False,False,False,"2,15",2757,2,FALSE,FALSE,1,0,1,0,0,0,0,3,1,1,1,1,1,0,0,0,2,3,True,True,"['süresi', '##z']","['ebedi', '##yet', '##en']"
+217,taşıt,kamyon,"4,083333333","8,416666667",False,True,True,False,False,True,False,False,"6,63",10701,8715,FALSE,FALSE,0,0,0,1,0,1,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['taşıt'],['kamyon']
+218,tren,yakıt,"1,333333333","7,416666667",False,True,True,False,False,True,False,False,"6,9",14751,12371,FALSE,FALSE,0,0,1,0,0,0,0,4,4,4,0,1,1,0,0,0,1,1,False,False,['tren'],['yakıt']
+219,yoldaş,keşiş,"1,166666667","3,75",False,True,False,True,False,False,False,True,,894,306,FALSE,FALSE,0,0,0,1,0,0,0,3,2,2,1,0,1,0,0,0,1,2,False,True,['yoldaş'],"['keş', '##iş']"
+220,horoz,sefer,"0,25","0,166666667",False,True,False,True,False,False,False,True,,1814,24702,FALSE,FALSE,0,0,0,0,1,0,0,3,4,3,0,0,0,0,0,0,2,1,True,False,"['hor', '##oz']",['sefer']
+221,tabure,çerçeve,"0,583333333","0,75",False,True,False,True,False,False,False,True,"6,7",136,17814,FALSE,FALSE,0,0,0,1,0,0,0,2,4,2,0,0,0,0,0,0,2,1,True,False,"['tabur', '##e']",['çerçeve']
+222,kordon,gülümseme,"0,166666667","0,083333333",False,True,False,True,False,False,False,True,,1701,1548,FALSE,FALSE,0,0,0,0,1,0,0,3,3,3,0,2,2,0,0,0,2,2,True,True,"['kor', '##don']","['gülümsem', '##e']"
+223,zeki,akıllı,6,"8,666666667",True,False,True,False,True,False,False,False,"2,29",25139,16388,FALSE,FALSE,1,0,1,0,0,0,0,4,4,4,0,1,1,0,0,0,1,1,False,False,['zeki'],['akıllı']
+224,gençmişçesine,yaşlıymışçasına,"0,083333333","8,083333333",False,True,True,False,False,True,False,False,,0,0,TRUE,TRUE,0,1,1,0,0,0,0,0,0,0,2,0,2,0,0,0,4,4,True,True,"['genç', '##miş', '##çesi', '##ne']","['yaşlı', '##ymış', '##çası', '##na']"
+225,nezle,ilaç,"1,416666667","7,5",False,True,True,False,False,True,False,False,"5,2",1168,42220,FALSE,FALSE,0,0,1,0,0,0,0,3,5,3,0,0,0,0,0,0,2,1,True,False,"['nez', '##le']",['ilaç']
+226,ilaç,çare,"4,333333333","8,25",False,True,True,False,False,True,False,False,"6,56",42220,12319,FALSE,FALSE,1,0,1,0,0,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['ilaç'],['çare']
+227,devlet,para,"0,75","6,416666667",False,True,True,False,False,True,False,False,"3,73",336669,207792,FALSE,FALSE,0,0,0,1,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['devlet'],['para']
+228,kavramsallaştırsın,çocuk,"0,333333333","0,333333333",False,True,False,True,False,False,False,True,,0,137866,TRUE,FALSE,0,0,0,0,1,0,0,0,5,0,2,0,2,1,0,1,4,1,True,False,"['kavram', '##sal', '##laştır', '##sın']",['çocuk']
+229,somurtma,kağıt,"0,166666667","0,083333333",False,True,False,True,False,False,False,True,,7,14940,FALSE,FALSE,0,0,0,0,1,0,0,1,4,1,1,0,1,0,0,0,3,1,True,False,"['som', '##urt', '##ma']",['kağıt']
+230,evrensel,bilimci,"0,25","3,083333333",False,True,False,True,False,False,False,True,"2,2",15287,1213,FALSE,FALSE,0,0,0,0,1,0,0,4,3,3,1,2,2,0,0,0,1,2,False,True,['evrensel'],"['bilim', '##ci']"
+231,barınak,soğuk,"0,416666667","3,666666667",False,True,False,True,False,False,False,True,"6,43",890,37223,FALSE,FALSE,0,0,0,1,0,0,0,3,5,3,1,0,1,0,0,0,2,1,True,False,"['barın', '##ak']",['soğuk']
+232,ilaç,yakıt,"0,583333333","1,5",False,True,False,True,False,False,False,True,"6,56",42220,12371,FALSE,FALSE,0,0,0,0,1,0,0,5,4,4,0,1,1,0,0,0,1,1,False,False,['ilaç'],['yakıt']
+233,evetçiler,yağmur,"0,166666667","0,166666667",False,True,False,True,False,False,False,True,,50,22203,FALSE,FALSE,0,0,0,0,1,0,0,2,4,2,1,0,1,1,0,1,2,1,True,False,"['evet', '##çiler']",['yağmur']
+234,başlamadılarsa,düzenci,"0,166666667","0,166666667",False,True,False,True,False,False,False,True,,1,19,FALSE,FALSE,0,0,0,0,1,0,0,1,1,1,1,2,2,2,0,2,3,2,True,True,"['başlama', '##dılar', '##sa']","['düzen', '##ci']"
+235,devlet,memur,"1,25",7,False,True,True,False,False,True,False,False,"3,73",336669,26940,FALSE,FALSE,0,0,1,0,0,0,1,5,4,4,0,0,0,0,0,0,1,1,False,False,['devlet'],['memur']
+236,alkol,sofra,"1,166666667","5,5",False,True,True,False,False,True,False,False,,16236,2120,FALSE,FALSE,0,0,0,1,0,0,0,4,3,3,0,0,0,0,0,0,1,1,False,False,['alkol'],['sofra']
+237,boza,manken,"0,25","0,166666667",False,True,False,True,False,False,False,True,,392,9006,FALSE,FALSE,0,0,0,0,1,0,0,3,4,3,0,0,0,0,0,0,2,1,True,False,"['boz', '##a']",['manken']
+238,cevher,gözlükçü,"0,416666667","0,25",False,True,False,True,False,False,False,True,,1957,96,FALSE,FALSE,0,0,0,0,1,0,0,3,2,2,0,2,2,0,0,0,2,2,True,True,"['cev', '##her']","['gözlük', '##çü']"
+239,anne,memur,"0,25","0,666666667",False,True,False,True,False,False,False,True,"5,84",62683,26940,FALSE,FALSE,0,0,0,0,1,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['anne'],['memur']
+240,oğlan,ilkellik,"0,25","0,416666667",False,True,False,True,False,False,False,True,,2929,167,FALSE,FALSE,0,0,0,0,1,0,0,3,2,2,0,0,0,0,0,0,1,2,False,True,['oğlan'],"['ilkel', '##lik']"
+241,dostçasına,arkadaşımsı,"5,833333333","7,916666667",True,False,True,False,True,False,False,False,,0,0,TRUE,TRUE,1,0,1,0,0,0,0,0,0,0,0,1,1,0,1,1,3,2,True,True,"['dost', '##çası', '##na']","['arkadaşım', '##sı']"
+242,dua,yüzük,"0,25","0,583333333",False,True,False,True,False,False,False,True,"2,84",11268,3197,FALSE,FALSE,0,0,0,0,1,0,0,4,3,3,0,0,0,0,0,0,1,1,False,False,['dua'],['yüzük']
+243,opak,geçirgen,"2,5","6,916666667",False,True,True,False,False,True,False,False,,273,267,FALSE,FALSE,0,1,1,0,0,0,0,2,2,2,0,0,0,0,0,0,2,2,True,True,"['op', '##ak']","['geçir', '##gen']"
+244,akıllı,deli,"0,083333333","9,166666667",False,True,True,False,False,True,False,False,"2,41",16388,15669,FALSE,FALSE,0,1,1,0,0,0,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['akıllı'],['deli']
+245,din,dua,"2,916666667","8,583333333",False,True,True,False,False,True,False,False,"2,22",51607,11268,FALSE,FALSE,0,0,0,1,0,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['din'],['dua']
+246,saydam,süreli,"0,25","0,75",False,True,False,True,False,False,False,True,,3791,19345,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,0,0,0,0,0,2,1,True,False,"['say', '##dam']",['süreli']
+247,yağcılık,heykel,"0,25","0,166666667",False,True,False,True,False,False,False,True,"2,39",163,6983,FALSE,FALSE,0,0,0,0,1,0,0,2,4,2,2,0,2,0,0,0,2,1,True,False,"['yağ', '##cılık']",['heykel']
+248,maymungilleri,muz,"1,666666667","6,083333333",False,True,True,False,False,True,False,False,,0,2917,TRUE,FALSE,0,0,1,0,0,0,0,0,3,0,1,0,1,2,0,2,3,1,True,False,"['maymun', '##giller', '##i']",['muz']
+249,oksijen,hayat,"2,25",8,False,True,True,False,False,True,False,False,"5,69",6174,65846,FALSE,FALSE,0,0,0,1,0,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['oksijen'],['hayat']
+250,hastane,çare,"2,5","7,583333333",False,True,True,False,False,True,False,False,"6,68",18148,12319,FALSE,FALSE,0,0,0,1,0,0,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['hastane'],['çare']
+251,içki,boza,"1,363636364","3,583333333",False,True,False,True,False,False,False,True,"6,44",16126,392,FALSE,FALSE,0,0,1,0,0,1,0,4,3,3,1,0,1,0,0,0,1,2,False,True,['içki'],"['boz', '##a']"
+252,tahta,ahşap,"6,5","8,25",True,False,True,False,True,False,False,False,"6,94",6150,7967,FALSE,FALSE,1,0,1,0,0,0,1,4,4,4,0,0,0,0,0,0,1,1,False,False,['tahta'],['ahşap']
+253,kral,yağcılık,"0,833333333","4,5",False,True,False,True,False,False,False,True,"5,33",13511,163,FALSE,FALSE,0,0,0,1,0,0,0,4,2,2,0,2,2,0,0,0,1,2,False,True,['kral'],"['yağ', '##cılık']"
+254,teizm,inançlılık,"5,25","8,416666667",True,False,True,False,True,False,False,False,,27,6,FALSE,FALSE,1,0,1,0,0,0,0,1,1,1,1,2,2,0,0,0,2,2,True,True,"['te', '##izm']","['inanç', '##lılık']"
+255,kordon,sicim,"3,5","3,916666667",False,True,False,True,False,False,False,True,,1701,257,FALSE,FALSE,1,0,0,1,0,0,0,3,2,2,0,0,0,0,0,0,2,2,True,True,"['kor', '##don']","['si', '##cim']"
+256,fani,adalet,"0,25","0,833333333",False,True,False,True,False,False,False,True,"2,45",1028,59379,FALSE,FALSE,0,0,0,0,1,0,0,3,5,3,0,0,0,0,0,0,2,1,True,False,"['fan', '##i']",['adalet']
+257,ikindi,oğlan,"0,166666667","0,083333333",False,True,False,True,False,False,False,True,,990,2929,FALSE,FALSE,0,0,0,0,1,0,0,3,3,3,0,0,0,0,0,0,2,1,True,False,"['ikin', '##di']",['oğlan']
+258,deneyimleme,tecrübelenme,"8,416666667","8,666666667",True,False,True,False,True,False,False,False,,20,0,TRUE,FALSE,0,0,0,1,0,0,0,1,0,0,2,2,2,0,0,0,2,2,True,True,"['deneyim', '##leme']","['tecrübe', '##lenme']"
+259,satmışlardır,lokanta,"0,166666667","0,833333333",False,True,False,True,False,False,False,True,,21,3743,FALSE,FALSE,0,0,0,1,0,0,0,1,4,1,0,0,0,2,0,2,2,1,True,False,"['sat', '##mışlardır']",['lokanta']
+260,kırmızı,namaz,"0,166666667","0,083333333",False,True,False,True,False,False,False,True,,56298,6615,FALSE,FALSE,0,0,0,0,1,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['kırmızı'],['namaz']
+261,mezarhane,kabristan,"8,5","8,833333333",True,False,True,False,True,False,False,False,,1,55,FALSE,FALSE,1,0,1,0,0,0,0,1,2,1,0,0,0,0,0,0,2,3,True,True,"['mezar', '##hane']","['kab', '##rist', '##an']"
+262,ekonomi,para,"3,5","8,583333333",False,True,True,False,False,True,False,False,"3,47",72584,207792,FALSE,FALSE,0,0,1,0,0,0,1,5,5,5,0,0,0,0,0,0,1,1,False,False,['ekonomi'],['para']
+263,dua,namaz,"4,166666667","8,583333333",False,True,True,False,False,True,False,False,"2,84",11268,6615,FALSE,FALSE,0,0,1,0,0,0,1,4,4,4,0,0,0,0,0,0,1,1,False,False,['dua'],['namaz']
+264,arkadaşımsı,kitaphane,"0,333333333","0,666666667",False,True,False,True,False,False,False,True,,0,1,TRUE,FALSE,0,0,0,0,1,0,0,0,1,0,1,1,1,1,0,1,2,2,True,True,"['arkadaşım', '##sı']","['kitap', '##hane']"
+265,enerjik,yorgun,"0,083333333","8,666666667",False,True,True,False,False,True,False,False,"2,69",1699,7932,FALSE,FALSE,0,1,1,0,0,0,0,3,4,3,1,1,1,0,0,0,2,1,True,False,"['enerji', '##k']",['yorgun']
+266,kağıt,gazete,2,"7,583333333",False,True,True,False,False,True,False,False,"6,83",14940,49607,FALSE,FALSE,0,0,1,0,0,0,1,4,5,4,0,0,0,0,0,0,1,1,False,False,['kağıt'],['gazete']
+267,cihaz,radyo,"2,5",7,False,True,True,False,False,True,False,False,"6,43",9397,31478,FALSE,FALSE,0,0,0,1,0,1,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['cihaz'],['radyo']
+268,kral,affedişi,"0,166666667","2,833333333",False,True,False,True,False,False,False,True,"5,33",13511,1,FALSE,FALSE,0,0,0,1,0,0,0,4,1,1,0,2,2,0,1,1,1,2,False,True,['kral'],"['affed', '##işi']"
+269,yeni,gençmişçesine,"1,25","3,5",False,True,False,True,False,False,False,True,"2,62",770145,0,TRUE,FALSE,0,0,0,1,0,0,0,5,0,0,0,2,2,0,0,0,1,4,False,True,['yeni'],"['genç', '##miş', '##çesi', '##ne']"
+270,öğrenci,hayta,"0,833333333","4,916666667",False,True,False,True,False,False,False,True,"6,18",67682,201,FALSE,FALSE,0,0,0,1,0,0,0,5,2,2,1,0,1,0,0,0,1,2,False,True,['öğrenci'],"['hay', '##ta']"
+271,araba,petrol,"1,416666667","7,916666667",False,True,True,False,False,True,False,False,"6,87",20283,91273,FALSE,FALSE,0,0,1,0,0,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['araba'],['petrol']
+272,şiddetli,sarsıcı,"6,25",8,True,False,True,False,True,False,False,False,,14198,1229,FALSE,FALSE,1,0,0,1,0,0,0,4,3,3,1,2,2,0,0,0,1,2,False,True,['şiddetli'],"['sars', '##ıcı']"
+273,su,deniz,"3,666666667","8,25",False,True,True,False,False,True,False,False,"6,8",129707,116696,FALSE,FALSE,0,0,1,0,0,0,1,5,5,5,0,0,0,0,0,0,1,1,False,False,['su'],['deniz']
+274,başlamadılarsa,başladılarsa,0,"8,666666667",False,True,True,False,False,True,False,False,,1,19,FALSE,FALSE,0,1,1,0,0,0,0,1,1,1,1,0,1,2,2,2,3,2,True,True,"['başlama', '##dılar', '##sa']","['başladılar', '##sa']"
+275,normalleşiyor,anormalleşiyor,0,9,False,True,True,False,False,True,False,False,,61,0,TRUE,FALSE,0,1,1,0,0,0,0,2,0,0,1,1,1,1,1,1,2,2,True,True,"['normal', '##leşiyor']","['anormal', '##leşiyor']"
+276,kan,kırmızı,"1,833333333","8,333333333",False,True,True,False,False,True,False,False,"6,7",54264,56298,FALSE,FALSE,0,0,1,0,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['kan'],['kırmızı']
+277,beyaz,papatya,"1,333333333","6,666666667",False,True,True,False,False,True,False,False,,78763,1605,FALSE,FALSE,0,0,1,0,0,0,0,5,3,3,0,0,0,0,0,0,1,2,False,True,['beyaz'],"['pap', '##atya']"
+278,kıyı,ormanlık,"0,5",4,False,True,False,True,False,False,False,True,,5868,2575,FALSE,FALSE,0,0,0,1,0,0,0,4,3,3,0,1,1,0,0,0,1,1,False,False,['kıyı'],['ormanlık']
+279,orman,kabristan,"0,666666667","3,166666667",False,True,False,True,False,False,False,True,"6,57",29908,55,FALSE,FALSE,0,0,0,1,0,0,0,4,2,2,0,0,0,0,0,0,1,3,False,True,['orman'],"['kab', '##rist', '##an']"
+280,üşengen,harika,"0,25","0,333333333",False,True,False,True,False,False,False,True,0,0,31671,TRUE,FALSE,0,0,0,0,1,0,0,0,4,0,1,0,1,0,0,0,3,1,True,False,"['üş', '##en', '##gen']",['harika']
+281,normalleşiyor,ısınmış,"0,166666667","0,416666667",False,True,False,True,False,False,False,True,,61,273,FALSE,FALSE,0,0,0,1,0,0,0,2,2,2,1,2,2,1,0,1,2,2,True,True,"['normal', '##leşiyor']","['ısın', '##mış']"
+282,radyo,müzik,"3,583333333","7,583333333",False,True,True,False,False,True,False,False,"6,75",31478,83849,FALSE,FALSE,0,0,1,0,0,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['radyo'],['müzik']
+283,suçlu,masum,0,"8,583333333",False,True,True,False,False,True,False,False,"4,69",13535,12698,FALSE,FALSE,0,1,1,0,0,0,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['suçlu'],['masum']
+284,erkekçene,yüreklicesine,"3,583333333",7,False,True,True,False,False,True,False,False,,1,0,TRUE,FALSE,1,0,1,0,0,0,0,1,0,0,2,0,2,0,0,0,3,3,True,True,"['erkek', '##çe', '##ne']","['yürek', '##lic', '##esine']"
+285,ısınmış,barıştırılırken,"0,666666667","0,333333333",False,True,False,True,False,False,False,True,,273,2,FALSE,FALSE,0,0,0,0,1,0,0,2,1,1,2,2,2,0,0,0,2,3,True,True,"['ısın', '##mış']","['barış', '##tır', '##ılırken']"
+286,pratikleştirsin,kavramsallaştırsın,"0,166666667","3,25",False,True,False,True,False,False,False,True,,0,0,TRUE,TRUE,0,1,1,0,0,0,0,0,0,0,2,2,2,1,1,1,3,4,True,True,"['pratik', '##leştir', '##sin']","['kavram', '##sal', '##laştır', '##sın']"
+287,televizyon,cenin,"0,25","0,166666667",False,True,False,True,False,False,False,True,"6,89",55956,1560,FALSE,FALSE,0,0,0,0,1,0,0,5,3,3,0,0,0,0,0,0,1,2,False,True,['televizyon'],"['cen', '##in']"
+288,pimpirikli,bıçak,"0,166666667","0,5",False,True,False,True,False,False,False,True,0,25,8509,FALSE,FALSE,0,0,0,1,0,0,0,1,4,1,1,0,1,0,0,0,4,1,True,False,"['pi', '##m', '##pir', '##ikli']",['bıçak']
+289,mezarlık,ormanlık,"1,083333333","3,25",False,True,False,True,False,False,False,True,,1440,2575,FALSE,FALSE,0,0,0,1,0,0,0,3,3,3,1,1,1,0,0,0,2,1,True,False,"['mezar', '##lık']",['ormanlık']
+290,mutluluk,harika,2,"5,416666667",False,True,True,False,False,True,False,False,"1,85",17475,31671,FALSE,FALSE,0,0,0,1,0,0,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['mutluluk'],['harika']
+291,hastane,rahatsız,"2,166666667","6,5",False,True,True,False,False,True,False,False,"6,68",18148,35800,FALSE,FALSE,0,0,0,1,0,0,1,4,5,4,1,1,1,0,0,0,1,1,False,False,['hastane'],['rahatsız']
+292,özgür,yardım,"0,166666667","1,583333333",False,True,False,True,False,False,False,True,,28827,100548,FALSE,FALSE,0,0,0,0,1,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['özgür'],['yardım']
+293,horultu,saray,"0,25","0,25",False,True,False,True,False,False,False,True,"5,36",21,21135,FALSE,FALSE,0,0,0,0,1,0,0,1,4,1,2,0,2,0,0,0,3,1,True,False,"['hor', '##ult', '##u']",['saray']
+294,üretim,sanatçı,"1,166666667","5,083333333",False,True,True,False,False,True,False,False,,70594,29783,FALSE,FALSE,0,0,1,0,0,0,0,5,4,4,1,1,1,0,0,0,1,1,False,False,['üretim'],['sanatçı']
+295,peşinatsız,ekonomi,"0,666666667","4,833333333",False,True,False,True,False,False,False,True,"3,83",127,72584,FALSE,FALSE,0,0,0,1,0,0,0,2,5,2,2,0,2,0,0,0,3,1,True,False,"['peşin', '##ats', '##ız']",['ekonomi']
+296,mutfak,ocak,"1,666666667","7,5",False,True,True,False,False,True,False,False,"6,75",9902,132312,FALSE,FALSE,0,0,1,0,0,0,1,4,5,4,0,0,0,0,0,0,1,1,False,False,['mutfak'],['ocak']
+297,böcek,kelebek,"2,5",7,False,True,True,False,False,True,False,False,,2994,3657,FALSE,FALSE,0,0,0,1,0,1,0,3,4,3,0,0,0,0,0,0,1,1,False,False,['böcek'],['kelebek']
+298,çenebazlığına,geçirgen,"0,166666667","0,083333333",False,True,False,True,False,False,False,True,,0,267,TRUE,FALSE,0,0,0,0,1,0,0,0,2,0,2,0,2,2,0,2,3,2,True,True,"['çene', '##baz', '##lığına']","['geçir', '##gen']"
+299,geçirgen,cam,"1,166666667","5,416666667",False,True,True,False,False,True,False,False,,267,18230,FALSE,FALSE,0,0,1,0,0,0,1,2,4,2,0,0,0,0,0,0,2,1,True,False,"['geçir', '##gen']",['cam']
+300,beyaz,külot,"1,416666667","6,833333333",False,True,True,False,False,True,False,False,,78763,291,FALSE,FALSE,0,0,1,0,0,0,0,5,2,2,0,0,0,0,0,0,1,2,False,True,['beyaz'],"['kül', '##ot']"
+301,tımarhane,deli,"2,333333333","8,75",False,True,True,False,False,True,False,False,,113,15669,FALSE,FALSE,0,0,1,0,0,0,1,2,4,2,1,0,1,0,0,0,3,1,True,False,"['t', '##ımar', '##hane']",['deli']
+302,muhalefetçiler,kemalci,"2,090909091","5,25",False,True,True,False,False,True,False,False,,0,59,TRUE,FALSE,1,0,1,0,0,0,0,0,2,0,1,1,1,1,0,1,2,2,True,True,"['muhalefet', '##çiler']","['kemal', '##ci']"
+303,savaştırılırken,cezalandırışı,"0,666666667","2,833333333",False,True,False,True,False,False,False,True,,0,1,TRUE,FALSE,0,0,0,1,0,0,0,0,1,0,2,2,2,0,1,1,3,2,True,True,"['savaş', '##tır', '##ılırken']","['cezalandır', '##ışı']"
+304,zaman,ikindi,"1,833333333","7,083333333",False,True,True,False,False,True,False,False,"2,19",495060,990,FALSE,FALSE,0,0,0,1,0,1,0,5,3,3,0,0,0,0,0,0,1,2,False,True,['zaman'],"['ikin', '##di']"
+305,atatürkist,tecrübelenme,"0,25","0,583333333",False,True,False,True,False,False,False,True,,0,0,TRUE,TRUE,0,0,0,0,1,0,0,0,0,0,1,2,2,0,0,0,2,2,True,True,"['atatürk', '##ist']","['tecrübe', '##lenme']"
+306,lamba,geceleyin,"1,333333333","6,916666667",False,True,True,False,False,True,False,False,"6,84",1579,533,FALSE,FALSE,0,0,0,1,0,0,0,3,3,3,0,2,2,0,0,0,1,2,False,True,['lamba'],"['gece', '##leyin']"
+307,sabır,sabırsızlık,"0,166666667","8,666666667",False,True,True,False,False,True,False,False,"1,5",5937,300,FALSE,FALSE,0,1,1,0,0,0,0,4,2,2,1,2,2,0,0,0,1,2,False,True,['sabır'],"['sabırsız', '##lık']"
+308,transparan,deneyimleme,"0,166666667","0,083333333",False,True,False,True,False,False,False,True,,597,20,FALSE,FALSE,0,0,0,0,1,0,0,3,1,1,0,2,2,0,0,0,3,2,True,True,"['trans', '##para', '##n']","['deneyim', '##leme']"
+309,haşarı,hayta,"7,5","7,75",True,False,True,False,True,False,False,False,"2,85",236,201,FALSE,FALSE,1,0,1,0,0,0,0,2,2,2,0,0,0,0,0,0,2,2,True,True,"['haş', '##arı']","['hay', '##ta']"
+310,yiyecek,horoz,"0,833333333","3,166666667",False,True,False,True,False,False,False,True,,10836,1814,FALSE,FALSE,0,0,0,1,0,1,0,4,3,3,0,0,0,0,0,0,1,2,False,True,['yiyecek'],"['hor', '##oz']"
+311,yoğurt,inançlılık,"0,25","0,166666667",False,True,False,True,False,False,False,True,"6,79",5450,6,FALSE,FALSE,0,0,0,0,1,0,0,4,1,1,0,2,2,0,0,0,1,2,False,True,['yoğurt'],"['inanç', '##lılık']"
+312,kıtlıklarda,bolluklarda,0,9,False,True,True,False,False,True,False,False,,3,0,TRUE,FALSE,0,1,1,0,0,0,0,1,0,0,1,1,1,2,2,2,3,3,True,True,"['kıt', '##lıklar', '##da']","['bol', '##luklar', '##da']"
+313,siyah,beyaz,0,"9,5",False,True,True,False,False,True,False,False,,51232,78763,FALSE,FALSE,0,1,1,0,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['siyah'],['beyaz']
+314,otomobil,tren,4,"7,75",False,True,True,False,False,True,False,False,,46731,14751,FALSE,FALSE,0,0,0,1,0,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['otomobil'],['tren']
+315,mutluluk,sicim,"0,25","0,083333333",False,True,False,True,False,False,False,True,"1,85",17475,257,FALSE,FALSE,0,0,0,0,1,0,0,4,2,2,1,0,1,0,0,0,1,2,False,True,['mutluluk'],"['si', '##cim']"
+316,fırın,ocak,"6,666666667","8,333333333",True,False,True,False,True,False,False,False,,3993,132312,FALSE,FALSE,1,0,1,0,0,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['fırın'],['ocak']
+317,ipek,kapüşon,"0,833333333","2,583333333",False,True,False,True,False,False,False,True,,10942,5,FALSE,FALSE,0,0,0,1,0,0,0,4,1,1,0,0,0,0,0,0,1,3,False,True,['ipek'],"['kap', '##üş', '##on']"
+318,savunmaktaydılar,saldırmaktaydılar,1,"8,916666667",False,True,True,False,False,True,False,False,,5,0,TRUE,FALSE,0,1,1,0,0,0,0,1,0,0,1,1,1,2,2,2,3,4,True,True,"['savunmak', '##taydı', '##lar']","['saldır', '##makta', '##ydı', '##lar']"
+319,bitki,enginar,"2,916666667","7,166666667",False,True,True,False,False,True,False,False,"6,6",11980,1068,FALSE,FALSE,0,0,0,1,0,1,0,4,3,3,0,0,0,0,0,0,1,2,False,True,['bitki'],"['engin', '##ar']"
+320,hukuk,nezle,"0,25","0,166666667",False,True,False,True,False,False,False,True,"3,79",71683,1168,FALSE,FALSE,0,0,0,0,1,0,0,5,3,3,0,0,0,0,0,0,1,2,False,True,['hukuk'],"['nez', '##le']"
+321,horultu,gürültü,"5,166666667","7,083333333",True,False,True,False,True,False,False,False,"5,36",21,6332,FALSE,FALSE,0,0,0,1,0,0,0,1,4,1,2,2,2,0,0,0,3,1,True,False,"['hor', '##ult', '##u']",['gürültü']
+322,süt,peynir,"3,25","8,166666667",False,True,True,False,False,True,False,False,"6,79",19593,7434,FALSE,FALSE,0,0,1,0,0,0,1,4,4,4,0,0,0,0,0,0,1,1,False,False,['süt'],['peynir']
+323,bağışlayışı,cezalandırışı,"0,083333333","8,416666667",False,True,True,False,False,True,False,False,,0,1,TRUE,FALSE,0,1,1,0,0,0,0,0,1,0,2,2,2,1,1,1,3,2,True,True,"['bağış', '##layış', '##ı']","['cezalandır', '##ışı']"
+324,su,çiçek,"0,916666667","6,25",False,True,True,False,False,True,False,False,"6,8",129707,33522,FALSE,FALSE,0,0,0,1,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['su'],['çiçek']
+325,taşıt,gemicik,"2,666666667","6,833333333",False,True,True,False,False,True,False,False,"6,63",10701,1,FALSE,FALSE,0,0,0,1,0,1,0,4,1,1,1,1,1,0,0,0,1,2,False,True,['taşıt'],"['gemi', '##cik']"
+326,yiyecek,meyve,"2,833333333","7,583333333",False,True,True,False,False,True,False,False,,10836,17748,FALSE,FALSE,0,0,1,0,0,1,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['yiyecek'],['meyve']
+327,kuşku,şüphe,"9,083333333","9,333333333",True,False,True,False,True,False,False,False,"1,58",7530,9721,FALSE,FALSE,1,0,1,0,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['kuşku'],['şüphe']
+328,çocuk,anne,"2,166666667",8,False,True,True,False,False,True,False,False,"6,45",137866,62683,FALSE,FALSE,0,0,1,0,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['çocuk'],['anne']
+329,iyiliyorsun,kötülüyorsun,0,"9,083333333",False,True,True,False,False,True,False,False,,0,18,TRUE,FALSE,0,1,0,1,0,0,0,0,1,0,1,1,1,2,2,2,3,3,True,True,"['iyi', '##liyor', '##sun']","['kötü', '##lüyor', '##sun']"
+330,şeffaf,saydam,"8,5","9,5",True,False,True,False,True,False,False,False,"4,37",8700,3791,FALSE,FALSE,1,0,1,0,0,0,0,4,4,4,0,0,0,0,0,0,1,2,False,True,['şeffaf'],"['say', '##dam']"
+331,teizm,çerçeve,"0,25","0,25",False,True,False,True,False,False,False,True,,27,17814,FALSE,FALSE,0,0,0,0,1,0,0,1,4,1,1,0,1,0,0,0,2,1,True,False,"['te', '##izm']",['çerçeve']
+332,anormalleşiyor,kapüşon,"0,181818182","0,083333333",False,True,False,True,False,False,False,True,,0,5,TRUE,FALSE,0,0,0,0,1,0,0,0,1,0,1,0,1,1,0,1,2,3,True,True,"['anormal', '##leşiyor']","['kap', '##üş', '##on']"
+333,sevgili,mutluluk,2,"5,75",False,True,True,False,False,True,False,False,"4,69",37193,17475,FALSE,FALSE,0,0,0,1,0,0,0,5,4,4,1,1,1,0,0,0,1,1,False,False,['sevgili'],['mutluluk']
+334,delilim,televizyon,"0,166666667","0,5",False,True,False,True,False,False,False,True,,11,55956,FALSE,FALSE,0,0,0,0,1,0,0,1,5,1,0,0,0,1,0,1,2,1,True,False,"['delil', '##im']",['televizyon']
+335,sofra,bıçak,"1,416666667","6,166666667",False,True,True,False,False,True,False,False,"6,37",2120,8509,FALSE,FALSE,0,0,1,0,0,0,1,3,4,3,0,0,0,0,0,0,1,1,False,False,['sofra'],['bıçak']
+336,ipek,gömlek,"1,75","7,166666667",False,True,True,False,False,True,False,False,,10942,4340,FALSE,FALSE,0,0,1,0,0,0,1,4,4,4,0,0,0,0,0,0,1,1,False,False,['ipek'],['gömlek']
+337,sanatçı,heykel,"1,5","7,5",False,True,True,False,False,True,False,False,"5,14",29783,6983,FALSE,FALSE,0,0,0,1,0,0,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['sanatçı'],['heykel']
+338,medya,yağcılık,"0,75","5,5",False,True,True,False,False,True,False,False,"4,68",43326,163,FALSE,FALSE,0,0,0,1,0,0,0,5,2,2,0,2,2,0,0,0,1,2,False,True,['medya'],"['yağ', '##cılık']"
+339,din,ibadet,"3,5","9,083333333",False,True,True,False,False,True,False,False,"2,22",51607,5116,FALSE,FALSE,0,0,1,0,0,0,1,5,4,4,0,0,0,0,0,0,1,1,False,False,['din'],['ibadet']
+340,tutsak,yakın,"0,166666667","0,416666667",False,True,False,True,False,False,False,True,,1783,153814,FALSE,FALSE,0,0,0,0,1,0,0,3,5,3,1,1,1,0,0,0,1,1,False,False,['tutsak'],['yakın']
+341,zarar,para,"0,666666667","4,833333333",False,True,False,True,False,False,False,True,"2,41",70292,207792,FALSE,FALSE,0,0,1,0,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['zarar'],['para']
+342,ateistlik,sekülerizmciler,"1,75","5,083333333",False,True,True,False,False,True,False,False,,16,0,TRUE,FALSE,1,0,1,0,0,0,0,1,0,0,2,0,2,0,0,0,3,4,True,True,"['ate', '##ist', '##lik']","['sek', '##üler', '##izm', '##ciler']"
+343,sabahlardaki,kahvaltı,"1,25","7,166666667",False,True,True,False,False,True,False,False,,2,6430,FALSE,FALSE,0,0,1,0,0,0,0,1,4,1,0,0,0,2,0,2,2,1,True,False,"['sabah', '##lardaki']",['kahvaltı']
+344,kadın,anne,"3,583333333","7,833333333",False,True,True,False,False,True,False,False,"6,24",156275,62683,FALSE,FALSE,0,0,1,0,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['kadın'],['anne']
+345,sabır,mühendis,"0,333333333",2,False,True,False,True,False,False,False,True,"1,5",5937,7509,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['sabır'],['mühendis']
+346,yakın,sıkı,"4,083333333","6,333333333",False,True,True,False,False,True,False,False,,153814,29614,FALSE,FALSE,0,0,0,1,0,0,0,5,4,4,1,1,1,0,0,0,1,1,False,False,['yakın'],['sıkı']
+347,saray,kral,"2,666666667",9,False,True,True,False,False,True,False,False,"6,56",21135,13511,FALSE,FALSE,0,0,1,0,0,0,1,4,4,4,0,0,0,0,0,0,1,1,False,False,['saray'],['kral']
+348,damar,mezar,"0,25",1,False,True,False,True,False,False,False,True,"6,52",15392,8324,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['damar'],['mezar']
+349,kuyumcu,mücevher,"2,5","8,583333333",False,True,True,False,False,True,False,False,"6,36",1472,2332,FALSE,FALSE,0,0,1,0,0,0,1,3,3,3,1,0,1,0,0,0,3,1,True,False,"['kuyu', '##m', '##cu']",['mücevher']
+350,müzik,ses,"4,333333333","8,833333333",False,True,True,False,False,True,False,False,"5,34",83849,57760,FALSE,FALSE,0,0,1,0,0,1,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['müzik'],['ses']
+351,alet,terazi,2,"6,083333333",False,True,True,False,False,True,False,False,"6,63",8007,2139,FALSE,FALSE,0,0,0,1,0,1,0,4,3,3,0,0,0,0,0,0,1,2,False,True,['alet'],"['ter', '##azi']"
+352,kesintili,manavınkiler,"0,166666667","0,166666667",False,True,False,True,False,False,False,True,,237,0,TRUE,FALSE,0,0,0,0,1,0,0,2,0,0,2,0,2,0,2,2,2,4,True,True,"['kesinti', '##li']","['mana', '##v', '##ın', '##kiler']"
+353,cansız,ahşap,"0,833333333","2,333333333",False,True,False,True,False,False,False,True,"5,29",2023,7967,FALSE,FALSE,0,0,0,1,0,1,0,3,4,3,1,0,1,0,0,0,1,1,False,False,['cansız'],['ahşap']
+354,otobüs,sefer,"1,583333333","7,166666667",False,True,True,False,False,True,False,False,"6,86",15906,24702,FALSE,FALSE,0,0,1,0,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['otobüs'],['sefer']
+355,kahvaltı,adalet,"0,25","0,166666667",False,True,False,True,False,False,False,True,"6,37",6430,59379,FALSE,FALSE,0,0,0,0,1,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['kahvaltı'],['adalet']
+356,cam,büyücü,"0,25","0,916666667",False,True,False,True,False,False,False,True,,18230,922,FALSE,FALSE,0,0,0,1,0,0,0,4,3,3,0,1,1,0,0,0,1,2,False,True,['cam'],"['büyü', '##cü']"
+357,anarşist,somurtma,"0,166666667","0,333333333",False,True,False,True,False,False,False,True,"5,66",757,7,FALSE,FALSE,0,0,0,0,1,0,0,3,1,1,1,1,1,0,0,0,4,3,True,True,"['ana', '##r', '##şi', '##st']","['som', '##urt', '##ma']"
+358,kıtlıklarda,tüketim,"0,833333333","5,083333333",False,True,True,False,False,True,False,False,,3,24279,FALSE,FALSE,0,0,0,1,0,0,0,1,4,1,1,1,1,2,0,2,3,1,True,False,"['kıt', '##lıklar', '##da']",['tüketim']
+359,kitaphane,kitap,"2,75",9,False,True,True,False,False,True,False,False,,1,70642,FALSE,FALSE,0,0,1,0,0,0,1,1,5,1,1,0,1,0,0,0,2,1,True,False,"['kitap', '##hane']",['kitap']
+360,kuşku,sabırsızlık,"0,416666667","1,333333333",False,True,False,True,False,False,False,True,"1,58",7530,300,FALSE,FALSE,0,0,0,0,1,0,0,4,2,2,0,2,2,0,0,0,1,2,False,True,['kuşku'],"['sabırsız', '##lık']"
+361,çiçek,papatya,"3,333333333","8,166666667",False,True,True,False,False,True,False,False,"6,67",33522,1605,FALSE,FALSE,0,0,0,1,0,0,0,5,3,3,0,0,0,0,0,0,1,2,False,True,['çiçek'],"['pap', '##atya']"
+362,manken,kelebek,"0,25","0,166666667",False,True,False,True,False,False,False,True,"6,28",9006,3657,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['manken'],['kelebek']
+363,ıslak,yağmur,"1,833333333","7,916666667",False,True,True,False,False,True,False,False,,3612,22203,FALSE,FALSE,0,0,1,0,0,0,1,4,4,4,0,0,0,0,0,0,1,1,False,False,['ıslak'],['yağmur']
+364,mühendis,üretim,"1,166666667","6,083333333",False,True,True,False,False,True,False,False,"5,49",7509,70594,FALSE,FALSE,0,0,0,1,0,0,0,4,5,4,0,1,1,0,0,0,1,1,False,False,['mühendis'],['üretim']
+365,süreli,ebediyeten,"0,833333333","6,5",False,True,True,False,False,True,False,False,,19345,2,FALSE,FALSE,0,1,1,0,0,0,0,4,1,1,0,1,1,0,0,0,1,3,False,True,['süreli'],"['ebedi', '##yet', '##en']"
+366,cisim,cihaz,"1,916666667","6,166666667",False,True,True,False,False,True,False,False,"5,84",2265,9397,FALSE,FALSE,0,0,0,1,0,1,0,3,4,3,0,0,0,0,0,0,1,1,False,False,['cisim'],['cihaz']
+367,korumaktaydılar,öldürülüşündeki,"0,166666667",2,False,True,False,True,False,False,False,True,,2,2,FALSE,FALSE,0,0,1,0,0,0,0,1,1,1,1,2,2,2,2,2,3,3,True,True,"['korumak', '##taydı', '##lar']","['öldürül', '##üş', '##ündeki']"
+368,aile,somut,"0,166666667","0,833333333",False,True,False,True,False,False,False,True,"4,78",68301,23545,FALSE,FALSE,0,0,0,0,1,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['aile'],['somut']
+369,ses,horultu,"3,5","6,5",False,True,True,False,False,True,False,False,"5,45",57760,21,FALSE,FALSE,0,0,0,1,0,0,0,5,1,1,0,2,2,0,0,0,1,3,False,True,['ses'],"['hor', '##ult', '##u']"
+370,sesteş,evetçiler,"0,166666667","0,416666667",False,True,False,True,False,False,False,True,"3,33",12,50,FALSE,FALSE,0,0,0,0,1,0,0,1,2,1,1,1,1,0,1,1,2,2,True,True,"['ses', '##teş']","['evet', '##çiler']"
+371,kemalci,kemalizmcilerden,"5,25","8,666666667",True,False,True,False,True,False,False,False,,59,0,TRUE,FALSE,0,0,1,0,0,0,0,2,0,0,1,2,2,0,2,2,2,4,True,True,"['kemal', '##ci']","['kemal', '##izm', '##ciler', '##den']"
+372,şiddetli,yorgunluk,"0,333333333","3,166666667",False,True,False,True,False,False,False,True,,14198,4796,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,1,2,2,0,0,0,1,1,False,False,['şiddetli'],['yorgunluk']
+373,papatya,gülüş,"0,333333333",2,False,True,False,True,False,False,False,True,"6,89",1605,506,FALSE,FALSE,0,0,0,0,1,0,0,3,3,3,0,1,1,0,0,0,2,1,True,False,"['pap', '##atya']",['gülüş']
+374,ocak,kabristan,"0,25","0,166666667",False,True,False,True,False,False,False,True,,132312,55,FALSE,FALSE,0,0,0,0,1,0,0,5,2,2,0,0,0,0,0,0,1,3,False,True,['ocak'],"['kab', '##rist', '##an']"
+375,tecrübelenme,alışkın,"2,833333333","4,583333333",False,True,False,True,False,False,False,True,,0,1678,TRUE,FALSE,0,0,0,1,0,0,0,0,3,0,2,2,2,0,0,0,2,2,True,True,"['tecrübe', '##lenme']","['alış', '##kın']"
+376,haşarı,pimpirikli,"0,25","0,833333333",False,True,False,True,False,False,False,True,"2,85",236,25,FALSE,FALSE,0,0,0,0,1,0,0,2,1,1,0,1,1,0,0,0,2,4,True,True,"['haş', '##arı']","['pi', '##m', '##pir', '##ikli']"
+377,transparan,yoğurt,"0,166666667","0,166666667",False,True,False,True,False,False,False,True,,597,5450,FALSE,FALSE,0,0,0,0,1,0,0,3,4,3,0,0,0,0,0,0,3,1,True,False,"['trans', '##para', '##n']",['yoğurt']
+378,oruç,taksi,"0,25","0,166666667",False,True,False,True,False,False,False,True,"3,03",7029,7692,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['oruç'],['taksi']
+379,kuyumcu,terazi,"0,583333333","4,666666667",False,True,False,True,False,False,False,True,"6,36",1472,2139,FALSE,FALSE,0,0,0,1,0,0,0,3,3,3,1,0,1,0,0,0,3,2,True,True,"['kuyu', '##m', '##cu']","['ter', '##azi']"
+380,oğlan,delikanlı,"4,666666667","7,583333333",False,True,True,False,False,True,False,False,,2929,5217,FALSE,FALSE,1,0,0,1,0,0,0,3,4,3,0,0,0,0,0,0,1,1,False,False,['oğlan'],['delikanlı']
+381,mezarlık,tavuk,"0,25","0,166666667",False,True,False,True,False,False,False,True,,1440,11603,FALSE,FALSE,0,0,0,0,1,0,0,3,4,3,1,0,1,0,0,0,2,1,True,False,"['mezar', '##lık']",['tavuk']
+382,hamile,dükkan,"0,25","1,25",False,True,False,True,False,False,False,True,,12317,5370,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['hamile'],['dükkan']
+383,primatçaları,zeki,"0,166666667","2,416666667",False,True,False,True,False,False,False,True,,0,25139,TRUE,FALSE,0,0,0,1,0,0,0,0,4,0,1,0,1,2,0,2,4,1,True,False,"['prim', '##at', '##ça', '##ları']",['zeki']
+384,hastane,tıp,"2,5","8,166666667",False,True,True,False,False,True,False,False,"6,68",18148,49640,FALSE,FALSE,0,0,1,0,0,0,0,4,5,4,1,0,1,0,0,0,1,1,False,False,['hastane'],['tıp']
+385,terazi,tıp,"0,25","0,25",False,True,False,True,False,False,False,True,"6,58",2139,49640,FALSE,FALSE,0,0,0,0,1,0,0,3,5,3,0,0,0,0,0,0,2,1,True,False,"['ter', '##azi']",['tıp']
+386,avare,uyumlu,"0,166666667","0,583333333",False,True,False,True,False,False,False,True,"3,07",460,18774,FALSE,FALSE,0,0,0,0,1,0,0,3,4,3,0,1,1,0,0,0,2,1,True,False,"['av', '##are']",['uyumlu']
+387,sabırsızlık,gözlükçü,"0,25","0,166666667",False,True,False,True,False,False,False,True,,300,96,FALSE,FALSE,0,0,0,0,1,0,0,2,2,2,2,2,2,0,0,0,2,2,True,True,"['sabırsız', '##lık']","['gözlük', '##çü']"
+388,kum,kadeh,"0,416666667",2,False,True,False,True,False,False,False,True,"6,62",6726,2684,FALSE,FALSE,0,0,0,0,1,0,0,4,3,3,0,0,0,0,0,0,1,1,False,False,['kum'],['kadeh']
+389,cinayetindeki,öldürülüşündeki,"6,5","9,166666667",True,False,True,False,True,False,False,False,,51,2,FALSE,FALSE,1,0,1,0,0,0,0,2,1,1,0,2,2,2,2,2,3,3,True,True,"['cinayeti', '##nde', '##ki']","['öldürül', '##üş', '##ündeki']"
+390,primatçaları,maymungilleri,"6,333333333",8,True,False,True,False,True,False,False,False,,0,0,TRUE,TRUE,1,0,1,0,0,0,0,0,0,0,1,1,1,2,2,2,4,3,True,True,"['prim', '##at', '##ça', '##ları']","['maymun', '##giller', '##i']"
+391,sihirbaz,öncülük,"0,25","0,333333333",False,True,False,True,False,False,False,True,,943,4570,FALSE,FALSE,0,0,0,0,1,0,0,3,4,3,1,2,2,0,0,0,2,1,True,False,"['sihir', '##baz']",['öncülük']
+392,kuş,tavuk,"2,833333333","6,5",False,True,True,False,False,True,False,False,"6,81",29836,11603,FALSE,FALSE,0,0,1,0,0,1,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['kuş'],['tavuk']
+393,giysi,ceket,3,"7,583333333",False,True,True,False,False,True,False,False,"6,54",2773,2581,FALSE,FALSE,0,0,0,1,0,1,0,3,3,3,1,0,1,0,0,0,1,1,False,False,['giysi'],['ceket']
+394,pamuk,üretim,"1,083333333","6,083333333",False,True,True,False,False,True,False,False,"6,77",17842,70594,FALSE,FALSE,0,0,0,1,0,0,0,4,5,4,0,1,1,0,0,0,1,1,False,False,['pamuk'],['üretim']
+395,noksan,eksik,"9,333333333","9,833333333",True,False,True,False,True,False,False,False,3,1185,29303,FALSE,FALSE,1,0,0,1,0,0,0,3,4,3,0,1,1,0,0,0,1,1,False,False,['noksan'],['eksik']
+396,taşıt,otobüs,"3,666666667",8,False,True,True,False,False,True,False,False,"6,63",10701,15906,FALSE,FALSE,0,0,1,0,0,1,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['taşıt'],['otobüs']
+397,eşya,radyo,"2,083333333","6,75",False,True,True,False,False,True,False,False,"6,56",18174,31478,FALSE,FALSE,0,0,0,1,0,1,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['eşya'],['radyo']
+398,satmışlardır,almışlardır,"0,083333333","8,833333333",False,True,True,False,False,True,False,False,,21,1038,FALSE,FALSE,0,1,1,0,0,0,0,1,3,1,0,0,0,2,2,2,2,2,True,True,"['sat', '##mışlardır']","['almış', '##lardır']"
+399,cihaz,televizyon,"2,5",7,False,True,True,False,False,True,False,False,"6,43",9397,55956,FALSE,FALSE,0,0,1,0,0,1,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['cihaz'],['televizyon']
+400,suskunluğuna,brüt,"0,166666667","0,166666667",False,True,False,True,False,False,False,True,,103,7022,FALSE,FALSE,0,0,0,0,1,0,0,2,4,2,2,0,2,2,0,2,3,1,True,False,"['sus', '##kun', '##luğuna']",['brüt']
+401,suskunluğuna,konuşkanlığına,0,"8,75",False,True,True,False,False,True,False,False,,103,0,TRUE,FALSE,0,1,1,0,0,0,0,2,0,0,2,2,2,2,2,2,3,3,True,True,"['sus', '##kun', '##luğuna']","['konuş', '##kanlı', '##ğına']"
+402,geceleyin,erkekçene,"0,166666667","0,666666667",False,True,False,True,False,False,False,True,,533,1,FALSE,FALSE,0,0,0,1,0,0,0,3,1,1,2,2,2,0,0,0,2,3,True,True,"['gece', '##leyin']","['erkek', '##çe', '##ne']"
+403,medya,kral,"0,25","1,75",False,True,False,True,False,False,False,True,"4,68",43326,13511,FALSE,FALSE,0,0,0,1,0,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['medya'],['kral']
+404,iyiliyorsun,pratikleştirsin,1,"2,166666667",False,True,False,True,False,False,False,True,,0,0,TRUE,TRUE,0,0,0,0,1,0,0,0,0,0,1,2,2,2,1,2,3,3,True,True,"['iyi', '##liyor', '##sun']","['pratik', '##leştir', '##sin']"
+405,şüphe,mutluluk,"0,25","1,333333333",False,True,False,True,False,False,False,True,"1,61",9721,17475,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,1,1,0,0,0,1,1,False,False,['şüphe'],['mutluluk']
+406,memur,polis,"3,583333333","6,666666667",False,True,True,False,False,True,False,False,"6,27",26940,93497,FALSE,FALSE,0,0,1,0,0,1,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['memur'],['polis']
+407,meslek,kuyumcu,"2,166666667","6,666666667",False,True,True,False,False,True,False,False,,63185,1472,FALSE,FALSE,0,0,0,1,0,1,0,5,3,3,0,1,1,0,0,0,1,3,False,True,['meslek'],"['kuyu', '##m', '##cu']"
+408,fırın,öncülük,"0,25","0,166666667",False,True,False,True,False,False,False,True,,3993,4570,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,2,2,0,0,0,1,1,False,False,['fırın'],['öncülük']
+409,eski,yaşlıymışçasına,"1,833333333",4,False,True,False,True,False,False,False,True,,249377,0,TRUE,FALSE,0,0,0,1,0,0,0,5,0,0,0,0,0,0,0,0,1,4,False,True,['eski'],"['yaşlı', '##ymış', '##çası', '##na']"
+410,masum,dostçasına,"0,75","3,333333333",False,True,False,True,False,False,False,True,,12698,0,TRUE,FALSE,0,0,0,1,0,0,0,4,0,0,0,0,0,0,0,0,1,3,False,True,['masum'],"['dost', '##çası', '##na']"
+411,lokanta,dükkan,"2,25","5,833333333",False,True,True,False,False,True,False,False,"6,71",3743,5370,FALSE,FALSE,0,0,1,0,0,1,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['lokanta'],['dükkan']
+412,ebleh,akıllı,0,"7,5",False,True,True,False,False,True,False,False,"2,67",61,16388,FALSE,FALSE,0,1,1,0,0,0,0,2,4,2,0,1,1,0,0,0,3,1,True,False,"['eb', '##le', '##h']",['akıllı']
+413,vitrin,televizyon,"0,333333333",4,False,True,False,True,False,False,False,True,"6,56",1725,55956,FALSE,FALSE,0,0,0,1,0,0,0,3,5,3,0,0,0,0,0,0,1,1,False,False,['vitrin'],['televizyon']
+414,şeffaf,opak,"1,166666667","7,166666667",False,True,True,False,False,True,False,False,"4,37",8700,273,FALSE,FALSE,0,1,1,0,0,0,0,4,2,2,0,0,0,0,0,0,1,2,False,True,['şeffaf'],"['op', '##ak']"
+415,dua,ölü,"0,75","6,833333333",False,True,True,False,False,True,False,False,"2,84",11268,24505,FALSE,FALSE,0,0,0,1,0,0,0,4,4,4,0,1,1,0,0,0,1,1,False,False,['dua'],['ölü']
+416,yorgunluk,sarsıcı,"0,333333333","2,333333333",False,True,False,True,False,False,False,True,"2,8",4796,1229,FALSE,FALSE,0,0,0,1,0,0,0,4,3,3,2,2,2,0,0,0,1,2,False,True,['yorgunluk'],"['sars', '##ıcı']"
+417,davadaş,yoldaş,"7,833333333","8,833333333",True,False,True,False,True,False,False,False,,0,894,TRUE,FALSE,1,0,1,0,0,0,0,0,3,0,1,1,1,0,0,0,2,1,True,False,"['davada', '##ş']",['yoldaş']
+418,özgür,serbest,"6,75","9,75",True,False,True,False,True,False,False,False,,28827,87614,FALSE,FALSE,1,0,1,0,0,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['özgür'],['serbest']
+419,gözlük,cam,"3,416666667","8,75",False,True,True,False,False,True,False,False,"6,87",3238,18230,FALSE,FALSE,0,0,1,0,0,0,1,3,4,3,1,0,1,0,0,0,1,1,False,False,['gözlük'],['cam']
+420,vicdan,pıhtı,"0,25","0,166666667",False,True,False,True,False,False,False,True,"1,39",5873,325,FALSE,FALSE,0,0,0,0,1,0,0,4,2,2,0,0,0,0,0,0,1,2,False,True,['vicdan'],"['p', '##ıhtı']"
+421,gülüş,gül,"1,833333333","4,833333333",False,True,False,True,False,False,False,True,"4,66",506,64994,FALSE,FALSE,0,0,0,0,1,0,0,3,5,3,1,0,1,0,0,0,1,1,False,False,['gülüş'],['gül']
+422,kahvaltı,zeytin,"1,166666667","7,5",False,True,True,False,False,True,False,False,"6,37",6430,7488,FALSE,FALSE,0,0,1,0,0,0,1,4,4,4,0,0,0,0,0,0,1,1,False,False,['kahvaltı'],['zeytin']
+423,ceket,kapüşon,"2,083333333","7,25",False,True,True,False,False,True,False,False,,2581,5,FALSE,FALSE,0,0,0,1,0,0,1,3,1,1,0,0,0,0,0,0,1,3,False,True,['ceket'],"['kap', '##üş', '##on']"
+424,araba,seyahat,"1,25","8,083333333",False,True,True,False,False,True,False,False,"6,87",20283,15936,FALSE,FALSE,0,0,1,0,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['araba'],['seyahat']
+425,evrensel,karışık,"0,25","0,916666667",False,True,False,True,False,False,False,True,"2,2",15287,12017,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,1,2,2,0,0,0,1,1,False,False,['evrensel'],['karışık']
+426,beyaz,horultu,"0,166666667","0,083333333",False,True,False,True,False,False,False,True,,78763,21,FALSE,FALSE,0,0,0,0,1,0,0,5,1,1,0,2,2,0,0,0,1,3,False,True,['beyaz'],"['hor', '##ult', '##u']"
+427,gürültü,müzik,"2,166666667","5,916666667",False,True,True,False,False,True,False,False,"5,29",6332,83849,FALSE,FALSE,0,0,0,1,0,1,0,4,5,4,2,0,2,0,0,0,1,1,False,False,['gürültü'],['müzik']
+428,taksi,yüzük,"0,25","0,166666667",False,True,False,True,False,False,False,True,"6,79",7692,3197,FALSE,FALSE,0,0,0,0,1,0,0,4,3,3,0,0,0,0,0,0,1,1,False,False,['taksi'],['yüzük']
+429,başıboş,yorgun,"0,25","0,333333333",False,True,False,True,False,False,False,True,"2,82",1234,7932,FALSE,FALSE,0,0,0,0,1,0,0,3,4,3,0,1,1,0,0,0,3,1,True,False,"['başı', '##bo', '##ş']",['yorgun']
+430,hayvan,kuş,3,"6,916666667",False,True,True,False,False,True,False,False,"6,49",22519,29836,FALSE,FALSE,0,0,1,0,0,1,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['hayvan'],['kuş']
+431,opak,çamaşır,"0,333333333","1,083333333",False,True,False,True,False,False,False,True,,273,4839,FALSE,FALSE,0,0,0,0,1,0,0,2,4,2,0,0,0,0,0,0,2,1,True,False,"['op', '##ak']",['çamaşır']
+432,kahin,şüphe,"0,25","1,333333333",False,True,False,True,False,False,False,True,,477,9721,FALSE,FALSE,0,0,0,1,0,0,0,3,4,3,0,0,0,0,0,0,2,1,True,False,"['kah', '##in']",['şüphe']
+433,çenebazlığına,kirlice,"0,166666667","0,166666667",False,True,False,True,False,False,False,True,,0,0,TRUE,TRUE,0,0,0,0,1,0,0,0,0,0,2,1,2,2,0,2,3,2,True,True,"['çene', '##baz', '##lığına']","['kirli', '##ce']"
+434,serin,sıcak,"0,083333333","7,833333333",False,True,True,False,False,True,False,False,"5,03",3675,561440,FALSE,FALSE,0,1,1,0,0,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['serin'],['sıcak']
+435,inançlılık,ateistlik,"0,666666667","8,916666667",False,True,True,False,False,True,False,False,,6,16,FALSE,FALSE,1,0,1,0,0,0,0,1,1,1,2,2,2,0,0,0,2,3,True,True,"['inanç', '##lılık']","['ate', '##ist', '##lik']"
+436,konuşkanlığına,çenebazlığına,"7,166666667","9,083333333",True,False,True,False,True,False,False,False,,0,0,TRUE,TRUE,1,0,1,0,0,0,0,0,0,0,2,2,2,2,2,2,3,3,True,True,"['konuş', '##kanlı', '##ğına']","['çene', '##baz', '##lığına']"
+437,sanatçı,şair,"3,666666667","8,166666667",False,True,True,False,False,True,False,False,"5,14",29783,17028,FALSE,FALSE,0,0,1,0,0,1,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['sanatçı'],['şair']
+438,mezarhane,ölü,"1,583333333","8,166666667",False,True,True,False,False,True,False,False,,1,24505,FALSE,FALSE,0,0,1,0,0,0,1,1,4,1,0,1,1,0,0,0,2,1,True,False,"['mezar', '##hane']",['ölü']
+439,anarşist,aykırı,"4,166666667","8,333333333",False,True,True,False,False,True,False,False,"5,66",757,41324,FALSE,FALSE,1,0,1,0,0,0,0,3,5,3,1,0,1,0,0,0,4,1,True,False,"['ana', '##r', '##şi', '##st']",['aykırı']
+440,uzak,fazlalık,"0,333333333","1,666666667",False,True,False,True,False,False,False,True,"2,87",57989,1000,FALSE,FALSE,0,0,0,1,0,0,0,5,3,3,0,1,1,0,0,0,1,2,False,True,['uzak'],"['fazla', '##lık']"
+441,fazlalık,noksan,"0,083333333","8,083333333",False,True,True,False,False,True,False,False,"3,99",1000,1185,FALSE,FALSE,0,1,1,0,0,0,0,3,3,3,1,0,1,0,0,0,2,1,True,False,"['fazla', '##lık']",['noksan']
+442,meslek,sanatçı,"2,166666667","7,25",False,True,True,False,False,True,False,False,,63185,29783,FALSE,FALSE,0,0,0,1,0,1,0,5,4,4,0,1,1,0,0,0,1,1,False,False,['meslek'],['sanatçı']
+443,tıp,yardım,"1,333333333","7,083333333",False,True,True,False,False,True,False,False,"3,41",49640,100548,FALSE,FALSE,0,0,0,1,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['tıp'],['yardım']
+444,kuyumcu,yüzük,"1,916666667","8,583333333",False,True,True,False,False,True,False,False,"6,36",1472,3197,FALSE,FALSE,0,0,1,0,0,0,1,3,3,3,1,0,1,0,0,0,3,1,True,False,"['kuyu', '##m', '##cu']",['yüzük']
+445,meyve,manavınkiler,"2,416666667","8,333333333",False,True,True,False,False,True,False,False,"6,63",17748,0,TRUE,FALSE,0,0,1,0,0,0,0,4,0,0,0,0,0,0,2,2,1,4,False,True,['meyve'],"['mana', '##v', '##ın', '##kiler']"
+446,devlet,korumaktaydılar,"0,25","4,5",False,True,False,True,False,False,False,True,"3,73",336669,2,FALSE,FALSE,0,0,0,1,0,0,0,5,1,1,0,1,1,0,2,2,1,3,False,True,['devlet'],"['korumak', '##taydı', '##lar']"
+447,kelebek,kemik,"0,25","0,166666667",False,True,False,True,False,False,False,True,"6,8",3657,9289,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['kelebek'],['kemik']
+448,harika,şahane,"7,833333333","9,166666667",True,False,True,False,True,False,False,False,"1,44",31671,3655,FALSE,FALSE,1,0,1,0,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['harika'],['şahane']
+449,faiz,kazanç,"4,166666667","8,083333333",False,True,True,False,False,True,False,False,"4,15",96787,12123,FALSE,FALSE,0,0,0,1,0,0,0,5,4,4,0,1,1,0,0,0,1,1,False,False,['faiz'],['kazanç']
+450,mezarlık,mezar,"5,25","9,166666667",True,False,True,False,True,False,False,False,,1440,8324,FALSE,FALSE,0,0,1,0,0,0,1,3,4,3,1,0,1,0,0,0,2,1,True,False,"['mezar', '##lık']",['mezar']
+451,gazete,haber,"3,833333333","9,083333333",False,True,True,False,False,True,False,False,"6,81",49607,119460,FALSE,FALSE,0,0,1,0,0,0,1,5,5,5,0,0,0,0,0,0,1,1,False,False,['gazete'],['haber']
+452,kıyı,sahil,"7,666666667",9,True,False,True,False,True,False,False,False,,5868,9500,FALSE,FALSE,1,0,1,0,0,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['kıyı'],['sahil']
+453,hukuk,ispatım,"1,583333333",7,False,True,True,False,False,True,False,False,"3,79",71683,5,FALSE,FALSE,0,0,0,1,0,0,0,5,1,1,0,0,0,0,1,1,1,2,False,True,['hukuk'],"['ispat', '##ım']"
+454,gündüz,geceleyin,"0,083333333","8,916666667",False,True,True,False,False,True,False,False,,16396,533,FALSE,FALSE,0,1,1,0,0,0,0,4,3,3,0,2,2,0,0,0,1,2,False,True,['gündüz'],"['gece', '##leyin']"
+455,noksan,gömlek,"0,166666667","0,166666667",False,True,False,True,False,False,False,True,3,1185,4340,FALSE,FALSE,0,0,0,0,1,0,0,3,4,3,0,0,0,0,0,0,1,1,False,False,['noksan'],['gömlek']
+456,kötülüyorsun,bolluklarda,"0,166666667","0,25",False,True,False,True,False,False,False,True,,18,0,TRUE,FALSE,0,0,0,0,1,0,0,1,0,0,1,1,1,2,2,2,3,3,True,True,"['kötü', '##lüyor', '##sun']","['bol', '##luklar', '##da']"
+457,alışkın,yeni,"0,25","4,583333333",False,True,False,True,False,False,False,True,"2,34",1678,770145,FALSE,FALSE,0,1,1,0,0,0,0,3,5,3,2,0,2,0,0,0,2,1,True,False,"['alış', '##kın']",['yeni']
+458,uygulamak,alet,"0,666666667","3,166666667",False,True,False,True,False,False,False,True,,6566,8007,FALSE,FALSE,0,0,0,1,0,0,0,4,4,4,1,0,1,0,0,0,1,1,False,False,['uygulamak'],['alet']
+459,cevher,mücevher,"3,5","6,5",False,True,True,False,False,True,False,False,,1957,2332,FALSE,FALSE,1,0,1,0,0,0,0,3,3,3,0,0,0,0,0,0,2,1,True,False,"['cev', '##her']",['mücevher']
+460,medya,gazete,"4,083333333","8,083333333",False,True,True,False,False,True,False,False,"4,68",43326,49607,FALSE,FALSE,0,0,1,0,0,1,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['medya'],['gazete']
+461,kadeh,içki,3,"8,5",False,True,True,False,False,True,False,False,"6,75",2684,16126,FALSE,FALSE,0,0,1,0,0,0,1,3,4,3,0,1,1,0,0,0,1,1,False,False,['kadeh'],['içki']
+462,atletik,ebleh,"0,25","0,583333333",False,True,False,True,False,False,False,True,"4,56",760,61,FALSE,FALSE,0,0,0,1,0,0,0,3,2,2,1,0,1,0,0,0,2,3,True,True,"['atlet', '##ik']","['eb', '##le', '##h']"
+463,okul,öğrenci,"1,666666667","8,916666667",False,True,True,False,False,True,False,False,"6,6",55774,67682,FALSE,FALSE,0,0,1,0,0,0,1,5,5,5,0,1,1,0,0,0,1,1,False,False,['okul'],['öğrenci']
+464,öldürülüşündeki,suçlu,"0,916666667","6,916666667",False,True,True,False,False,True,False,False,#REF!,#REF!,2,#REF!,#REF!,0,0,1,0,0,0,0,1,1,1,2,2,2,2,2,2,3,1,True,False,"['öldürül', '##üş', '##ündeki']",['suçlu']
+465,düzenci,anarşist,"0,083333333","7,5",False,True,True,False,False,True,False,False,,19,757,FALSE,FALSE,0,1,1,0,0,0,0,1,3,1,2,1,2,0,0,0,2,4,True,True,"['düzen', '##ci']","['ana', '##r', '##şi', '##st']"
+466,kıyı,gemicik,"0,75","5,5",False,True,True,False,False,True,False,False,,5868,1,FALSE,FALSE,0,0,0,1,0,0,0,4,1,1,0,1,1,0,0,0,1,2,False,True,['kıyı'],"['gemi', '##cik']"
+467,oruç,zaman,"1,166666667","6,333333333",False,True,True,False,False,True,False,False,"3,03",7029,495060,FALSE,FALSE,0,0,0,1,0,0,0,4,5,4,0,0,0,0,0,0,1,1,False,False,['oruç'],['zaman']
+468,kadın,çocuk,"1,416666667","7,25",False,True,True,False,False,True,False,False,"6,24",156275,137866,FALSE,FALSE,0,0,0,1,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['kadın'],['çocuk']
+469,ateistlik,teizm,"0,666666667","8,833333333",False,True,True,False,False,True,False,False,,16,27,FALSE,FALSE,0,1,1,0,0,0,0,1,1,1,2,1,2,0,0,0,3,2,True,True,"['ate', '##ist', '##lik']","['te', '##izm']"
+470,barıştırılırken,savaştırılırken,0,"9,083333333",False,True,True,False,False,True,False,False,,2,0,TRUE,FALSE,0,1,1,0,0,0,0,1,0,0,2,2,2,0,0,0,3,3,True,True,"['barış', '##tır', '##ılırken']","['savaş', '##tır', '##ılırken']"
+471,horoz,alet,"0,25","0,166666667",False,True,False,True,False,False,False,True,,1814,8007,FALSE,FALSE,0,0,0,0,1,0,0,3,4,3,0,0,0,0,0,0,2,1,True,False,"['hor', '##oz']",['alet']
+472,borçlanmak,alacaklanmak,0,"8,833333333",False,True,True,False,False,True,False,False,,528,0,TRUE,FALSE,0,1,1,0,0,0,0,3,0,0,1,1,1,1,1,1,2,2,True,True,"['borçlanma', '##k']","['alacak', '##lanmak']"
+473,maymunsuları,maymungilleri,"7,5","9,083333333",True,False,True,False,True,False,False,False,,0,0,TRUE,TRUE,1,0,1,0,0,0,0,0,0,0,2,1,2,2,2,2,3,3,True,True,"['maymun', '##sul', '##arı']","['maymun', '##giller', '##i']"
+474,hamile,düzenci,"0,25","0,166666667",False,True,False,True,False,False,False,True,,12317,19,FALSE,FALSE,0,0,0,0,1,0,0,4,1,1,0,2,2,0,0,0,1,2,False,True,['hamile'],"['düzen', '##ci']"
+475,öğle,orman,"0,25","0,25",False,True,False,True,False,False,False,True,,14001,29908,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,0,0,0,0,0,1,1,False,False,['öğle'],['orman']
+476,otomobil,araba,"9,166666667","9,333333333",True,False,True,False,True,False,False,False,,46731,20283,FALSE,FALSE,1,0,1,0,0,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['otomobil'],['araba']
+477,meyve,muz,"3,166666667","7,916666667",False,True,True,False,False,True,False,False,"6,63",17748,2917,FALSE,FALSE,0,0,0,1,0,1,0,4,3,3,0,0,0,0,0,0,1,1,False,False,['meyve'],['muz']
+478,süt,bilişim,"0,25","0,166666667",False,True,False,True,False,False,False,True,"6,79",19593,19208,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,2,2,0,0,0,1,1,False,False,['süt'],['bilişim']
+479,atatürkist,davadaş,1,"3,166666667",False,True,False,True,False,False,False,True,,0,0,TRUE,TRUE,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0,2,2,True,True,"['atatürk', '##ist']","['davada', '##ş']"
+480,mezar,ölü,"2,166666667","9,083333333",False,True,True,False,False,True,False,False,"6,21",8324,24505,FALSE,FALSE,0,0,1,0,0,0,1,4,4,4,0,1,1,0,0,0,1,1,False,False,['mezar'],['ölü']
+481,vitrin,manken,"1,25","7,5",False,True,True,False,False,True,False,False,"6,56",1725,9006,FALSE,FALSE,0,0,1,0,0,0,1,3,4,3,0,0,0,0,0,0,1,1,False,False,['vitrin'],['manken']
+482,turizm,düzenci,"0,25","0,166666667",False,True,False,True,False,False,False,True,"3,28",55821,19,FALSE,FALSE,0,0,0,0,1,0,0,5,1,1,1,2,2,0,0,0,1,2,False,True,['turizm'],"['düzen', '##ci']"
+483,fani,ölü,"2,166666667",8,False,True,True,False,False,True,False,False,"2,45",1028,24505,FALSE,FALSE,0,0,1,0,0,0,0,3,4,3,0,1,1,0,0,0,2,1,True,False,"['fan', '##i']",['ölü']
+484,sosyalleştirdikleri,başıboş,"0,166666667","0,5",False,True,False,True,False,False,False,True,,0,1234,TRUE,FALSE,0,0,0,1,0,0,0,0,3,0,2,0,2,2,0,2,3,3,True,True,"['sosyal', '##leştir', '##dikleri']","['başı', '##bo', '##ş']"
+485,kirlice,lamba,"0,166666667",1,False,True,False,True,False,False,False,True,,0,1579,TRUE,FALSE,0,0,0,0,1,0,0,0,3,0,1,0,1,0,0,0,2,1,True,False,"['kirli', '##ce']",['lamba']
+486,kadın,hamile,"1,916666667",8,False,True,True,False,False,True,False,False,"6,24",156275,12317,FALSE,FALSE,0,0,1,0,0,0,0,5,4,4,0,0,0,0,0,0,1,1,False,False,['kadın'],['hamile']
+487,karışık,temiz,"0,333333333",2,False,True,False,True,False,False,False,True,"2,9",12017,23343,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,2,0,2,0,0,0,1,1,False,False,['karışık'],['temiz']
+488,şair,sabır,"0,333333333","1,75",False,True,False,True,False,False,False,True,"5,59",17028,5937,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,1,1,0,0,0,1,1,False,False,['şair'],['sabır']
+489,maymunsuları,kuş,"1,083333333","3,833333333",False,True,False,True,False,False,False,True,,0,29836,TRUE,FALSE,0,0,0,1,0,0,0,0,4,0,2,0,2,2,0,2,3,1,True,False,"['maymun', '##sul', '##arı']",['kuş']
+490,şeffaf,transparan,"9,25","9,666666667",True,False,True,False,True,False,False,False,"4,37",8700,597,FALSE,FALSE,1,0,1,0,0,0,0,4,3,3,0,0,0,0,0,0,1,3,False,True,['şeffaf'],"['trans', '##para', '##n']"
+491,hayvan,böcek,"2,916666667","7,666666667",False,True,True,False,False,True,False,False,"6,49",22519,2994,FALSE,FALSE,0,0,0,1,0,0,0,4,3,3,0,0,0,0,0,0,1,1,False,False,['hayvan'],['böcek']
+492,cisim,somut,"2,166666667","6,666666667",False,True,True,False,False,True,False,False,"5,84",2265,23545,FALSE,FALSE,0,0,0,1,0,0,0,3,4,3,0,0,0,0,0,0,1,1,False,False,['cisim'],['somut']
+493,aile,anne,"1,916666667","8,5",False,True,True,False,False,True,False,False,"4,78",68301,62683,FALSE,FALSE,0,0,1,0,0,0,1,5,5,5,0,0,0,0,0,0,1,1,False,False,['aile'],['anne']
+494,varlık,cisim,"4,25","7,083333333",False,True,True,False,False,True,False,False,"3,78",14909,2265,FALSE,FALSE,0,0,0,1,0,1,0,4,3,3,1,0,1,0,0,0,1,1,False,False,['varlık'],['cisim']
+495,öğle,ikindi,"4,583333333","8,333333333",False,True,True,False,False,True,False,False,,14001,990,FALSE,FALSE,1,0,1,0,0,0,0,4,3,3,0,0,0,0,0,0,1,2,False,True,['öğle'],"['ikin', '##di']"
+496,soğuk,sıcak,0,"9,416666667",False,True,True,False,False,True,False,False,"5,43",37223,561440,FALSE,FALSE,0,1,1,0,0,0,0,5,5,5,0,0,0,0,0,0,1,1,False,False,['soğuk'],['sıcak']
+497,peşinatsız,gülümseme,"0,166666667","0,25",False,True,False,True,False,False,False,True,"3,83",127,1548,FALSE,FALSE,0,0,0,0,1,0,0,2,3,2,2,2,2,0,0,0,3,2,True,True,"['peşin', '##ats', '##ız']","['gülümsem', '##e']"
+498,kum,hastane,"0,25","0,166666667",False,True,False,True,False,False,False,True,"6,62",6726,18148,FALSE,FALSE,0,0,0,0,1,0,0,4,4,4,0,1,1,0,0,0,1,1,False,False,['kum'],['hastane']
+499,fırın,kahin,"0,25","0,166666667",False,True,False,True,False,False,False,True,,3993,477,FALSE,FALSE,0,0,0,0,1,0,0,4,3,3,0,0,0,0,0,0,1,2,False,True,['fırın'],"['kah', '##in']"
+500,uyumlu,aykırı,0,"9,166666667",False,True,True,False,False,True,False,False,"2,1",18774,41324,FALSE,FALSE,0,1,1,0,0,0,0,4,5,4,1,0,1,0,0,0,1,1,False,False,['uyumlu'],['aykırı']

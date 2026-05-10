@@ -1,0 +1,4 @@
+model,word_pairs,clean_pairs,split_pairs,split_pair_percentage
+berturk,500,225,275,55.0
+mbert,500,12,488,97.6
+xlmr,500,93,407,81.4

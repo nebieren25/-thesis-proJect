@@ -1,0 +1,76 @@
+model,word,tokens,subtoken_count,is_split
+berturk,anarşist,ana ##r ##şi ##st,4,True
+berturk,asosyalleştirdikleri,as ##osyal ##leştir ##dikleri,4,True
+berturk,biçimlendirilmişlerdir,biçim ##lendir ##ilmiş ##lerdir,4,True
+berturk,gençmişçesine,genç ##miş ##çesi ##ne,4,True
+berturk,kavramsallaştırsın,kavram ##sal ##laştır ##sın,4,True
+berturk,kemalizmcilerden,kemal ##izm ##ciler ##den,4,True
+berturk,manavınkiler,mana ##v ##ın ##kiler,4,True
+berturk,pimpirikli,pi ##m ##pir ##ikli,4,True
+berturk,primatçaları,prim ##at ##ça ##ları,4,True
+berturk,saldırmaktaydılar,saldır ##makta ##ydı ##lar,4,True
+berturk,sekülerizmciler,sek ##üler ##izm ##ciler,4,True
+berturk,yaşlıymışçasına,yaşlı ##ymış ##çası ##na,4,True
+berturk,atatürkçülerden,atatürk ##çü ##lerden,3,True
+berturk,ateistlik,ate ##ist ##lik,3,True
+berturk,barıştırılırken,barış ##tır ##ılırken,3,True
+berturk,bağışlayışı,bağış ##layış ##ı,3,True
+berturk,başlamadılarsa,başlama ##dılar ##sa,3,True
+berturk,başıboş,başı ##bo ##ş,3,True
+berturk,bolluklarda,bol ##luklar ##da,3,True
+berturk,cinayetindeki,cinayeti ##nde ##ki,3,True
+berturk,dostçasına,dost ##çası ##na,3,True
+berturk,ebediyeten,ebedi ##yet ##en,3,True
+berturk,ebleh,eb ##le ##h,3,True
+berturk,erkekçene,erkek ##çe ##ne,3,True
+berturk,horultu,hor ##ult ##u,3,True
+mbert,asosyalleştirdikleri,as ##os ##yal ##le ##ştir ##dik ##leri,7,True
+mbert,kavramsallaştırsın,ka ##vra ##msa ##lla ##ştı ##rs ##ın,7,True
+mbert,atatürkçülerden,ata ##tür ##k ##ç ##üler ##den,6,True
+mbert,biçimlendirilmişlerdir,bi ##çim ##lendi ##ril ##miş ##lerdir,6,True
+mbert,kötülüyorsun,k ##öt ##ül ##ü ##yor ##sun,6,True
+mbert,saldırmaktaydılar,sal ##dır ##mak ##tay ##dı ##lar,6,True
+mbert,sekülerizmciler,se ##k ##üler ##izm ##cile ##r,6,True
+mbert,tecrübelenme,te ##c ##rü ##bele ##n ##me,6,True
+mbert,yaşlıymışçasına,yaş ##lı ##ym ##ış ##ças ##ına,6,True
+mbert,öldürülüşündeki,öld ##ür ##ül ##üş ##ünde ##ki,6,True
+mbert,anormalleşiyor,ano ##rmal ##le ##şi ##yor,5,True
+mbert,arkadaşımsı,ark ##ada ##şı ##ms ##ı,5,True
+mbert,bağışlayışı,ba ##ğı ##ş ##lay ##ışı,5,True
+mbert,başlamadılarsa,baş ##lama ##dı ##lars ##a,5,True
+mbert,gözlükçü,g ##öz ##lük ##ç ##ü,5,True
+mbert,gülümseme,g ##ül ##üm ##sem ##e,5,True
+mbert,kemalizmcilerden,ke ##mali ##zm ##cile ##rden,5,True
+mbert,korumaktaydılar,kor ##uma ##kta ##ydı ##lar,5,True
+mbert,manavınkiler,mana ##v ##ın ##kil ##er,5,True
+mbert,muhalefetçiler,mu ##hale ##fet ##çi ##ler,5,True
+mbert,pratikleştirsin,pra ##tik ##le ##ştir ##sin,5,True
+mbert,sabırsızlık,sa ##b ##ır ##sız ##lık,5,True
+mbert,savunmaktaydılar,savu ##nma ##kta ##ydı ##lar,5,True
+mbert,sosyalleştirdikleri,sosyal ##le ##ştir ##dik ##leri,5,True
+mbert,yüreklicesine,y ##üre ##kli ##cesi ##ne,5,True
+xlmr,asosyalleştirdikleri,▁asos yal leşti r dikleri,5,True
+xlmr,kavramsallaştırsın,▁kavram sal laştı r sın,5,True
+xlmr,kemalizmcilerden,▁ke mal izm ci lerden,5,True
+xlmr,kıtlıklarda,▁ kı t lıklar da,5,True
+xlmr,manavınkiler,▁mana v ın ki ler,5,True
+xlmr,pratikleştirsin,▁pra tik leşti r sin,5,True
+xlmr,saldırmaktaydılar,▁sal dır makta y dılar,5,True
+xlmr,sekülerizmciler,▁se kül er izm ciler,5,True
+xlmr,yaşlıymışçasına,▁yaşlı y mış ça sına,5,True
+xlmr,anormalleşiyor,▁a normal leş iyor,4,True
+xlmr,atatürkçülerden,▁ata türk çü lerden,4,True
+xlmr,barıştırılırken,▁bar ıştır ılır ken,4,True
+xlmr,başıboş,▁ başı bo ş,4,True
+xlmr,biçimlendirilmişlerdir,▁biçim lendir ilmiş lerdir,4,True
+xlmr,cezalandırışı,▁ceza landı r ışı,4,True
+xlmr,ebediyeten,▁e bed iyet en,4,True
+xlmr,gençmişçesine,▁genç miş çe sine,4,True
+xlmr,gülümseme,▁gül üm se me,4,True
+xlmr,gürültü,▁g ürü l tü,4,True
+xlmr,korumaktaydılar,▁koruma k tay dılar,4,True
+xlmr,maymungilleri,▁may mung iller i,4,True
+xlmr,maymunsuları,▁may mun su ları,4,True
+xlmr,peşinatsız,▁pe şin at sız,4,True
+xlmr,primatçaları,▁prima t ça ları,4,True
+xlmr,pıhtı,▁p ı h tı,4,True

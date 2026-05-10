@@ -1,0 +1,17 @@
+model,subtoken_count,unique_words,unique_word_percentage,word_occurrences,word_occurrence_percentage
+berturk,1,185,58.36,620,62.0
+berturk,2,83,26.18,244,24.4
+berturk,3,37,11.67,106,10.6
+berturk,4,12,3.79,30,3.0
+mbert,1,31,9.78,110,11.0
+mbert,2,105,33.12,342,34.2
+mbert,3,104,32.81,333,33.3
+mbert,4,51,16.09,150,15.0
+mbert,5,16,5.05,40,4.0
+mbert,6,8,2.52,20,2.0
+mbert,7,2,0.63,5,0.5
+xlmr,1,107,33.75,374,37.4
+xlmr,2,116,36.59,358,35.8
+xlmr,3,57,17.98,168,16.8
+xlmr,4,28,8.83,79,7.9
+xlmr,5,9,2.84,21,2.1
