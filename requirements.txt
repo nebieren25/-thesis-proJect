@@ -1,0 +1,13 @@
+# Core notebook dependencies
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+openai>=1.0
+
+# Transformer model inference
+torch>=2.0
+transformers>=4.40
+
+# Jupyter notebook support
+ipykernel>=6.0
+notebook>=7.0
