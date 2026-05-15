@@ -1,0 +1,4 @@
+model,word_pairs,clean_pairs,split_pairs,both_words_split_pairs,split_pair_percentage,both_words_split_percentage,mean_pair_total_subtoken_count,median_pair_total_subtoken_count,mean_pair_max_subtoken_count,mean_pair_avg_subtoken_char_length
+BERTurk,500,225,275,105,55.0,21.0,3.092,3.0,1.826,4.613028571428571
+mBERT,500,12,488,402,97.6,80.4,5.496,5.0,3.258,2.5287520202020204
+XLM-R,500,93,407,219,81.4,43.8,4.03,4.0,2.438,3.6581626984126983

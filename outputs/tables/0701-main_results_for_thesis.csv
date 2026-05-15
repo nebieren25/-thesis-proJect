@@ -1,0 +1,4 @@
+result_label,input_condition,model,model_name,layer,pooling,spearman_rho,p_value,n_pairs
+best_isolated,isolated,BERTurk,dbmdz/bert-base-turkish-cased,1,first,0.4266940148626279,1.533853159284731e-23,500
+best_contextual,contextual,BERTurk,dbmdz/bert-base-turkish-cased,7,first,0.5275383971276283,3.630230351379531e-37,500
+global_best,contextual,BERTurk,dbmdz/bert-base-turkish-cased,7,first,0.5275383971276283,3.630230351379531e-37,500

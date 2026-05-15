@@ -35,6 +35,7 @@ The project also examines:
 - Whether isolated-word embeddings differ from contextual sentence-averaged embeddings.
 - Whether the best pooling strategy changes across transformer layers.
 - Whether Turkish-specific and multilingual transformer models behave differently.
+- Whether a follow-up morphological triplet probe supports the interpretation that first-subtoken pooling preserves stem/root information.
 
 ## Models
 
@@ -80,6 +81,7 @@ The raw CSV uses the original AnlamVer formatting, including semicolon separator
 |-- 03_all_model_isolated_embedding_experiment.ipynb
 |-- 04_generate_llm_context_sentences.ipynb
 |-- 05_contextual_embedding_experiment.ipynb
+|-- 06_triplet_probe_experiment.ipynb
 |-- data/
 |   |-- raw/
 |   |   `-- anlamver-final.csv
@@ -87,13 +89,20 @@ The raw CSV uses the original AnlamVer formatting, including semicolon separator
 |       |-- anlamver_tokenization_analysis.csv
 |       |-- context_sentences_llm.csv
 |       |-- context_sentences_llm_invalid.csv
-|       `-- context_sentences_llm_raw_batch5_sent15.jsonl
+|       |-- context_sentences_llm_raw_batch5_sent15.jsonl
+|       `-- triplet_stimulus_with_tokenization.csv
 |-- docs/
 |   `-- thesis_project_context.md
 |-- outputs/
 |   |-- figures/
 |   |-- results/
 |   `-- tables/
+|-- triplet_files/
+|   |-- build_stimulus.py
+|   |-- check_tokenization.py
+|   |-- root_inventory.csv
+|   |-- suffix_inventory.csv
+|   `-- triplet_stimulus.csv
 |-- requirements.txt
 `-- README.md
 ```
@@ -255,6 +264,53 @@ outputs/figures/0504-contextual_minus_isolated_by_configuration.png
 
 Some `040x` contextual result files may also exist in `outputs/results/` and `outputs/figures/` from earlier contextual-analysis runs. The current contextual notebook writes the `050x` files listed above.
 
+### 6. Morphological Triplet Probe
+
+Notebook:
+
+```text
+06_triplet_probe_experiment.ipynb
+```
+
+Purpose:
+
+- Run a follow-up isolated-word probe testing whether model embeddings are pulled more by shared Turkish roots or shared suffixes.
+- Use triplets of the form `A+x`, `A+y`, and `B+x`.
+- Compute `sim_same_root = cos(A+x, A+y)` and `sim_same_suffix = cos(A+x, B+x)`.
+- Use `delta = sim_same_root - sim_same_suffix` as the primary metric.
+- Compare BERTurk, mBERT, and XLM-R over layers `1`, `7`, and `12`.
+- Compare `first`, `last`, `mean`, and `max` pooling with special tokens excluded.
+- Add robustness checks for stricter tokenization subsets, including BERTurk all-split triplets.
+
+Inputs:
+
+```text
+data/processed/triplet_stimulus_with_tokenization.csv
+```
+
+If this file is missing, regenerate it from the triplet stimulus:
+
+```bash
+python triplet_files/check_tokenization.py triplet_files/triplet_stimulus.csv
+cp triplet_files/triplet_stimulus_with_tokenization.csv data/processed/triplet_stimulus_with_tokenization.csv
+```
+
+Main outputs:
+
+```text
+outputs/results/0601-triplet_probe_per_triplet.csv
+outputs/results/0602-triplet_probe_summary.csv
+outputs/results/0603-triplet_probe_main_table.csv
+outputs/results/0604-triplet_probe_robustness.csv
+outputs/figures/0601-delta_by_model_pooling.png
+outputs/figures/0602-delta_heatmap_by_layer_pooling.png
+outputs/figures/0603-delta_by_category.png
+outputs/figures/0604-vowel_class_robustness.png
+outputs/figures/0605-individual_triplet_deltas.png
+```
+
+This notebook is a mechanistic follow-up to the main AnlamVer experiments. It should be interpreted as exploratory evidence about why first pooling works well, not as a replacement for the main Spearman-correlation analysis.
+
 ## Installation
 
 Create and activate a Python environment:
@@ -300,6 +356,7 @@ Recommended execution order:
 03_all_model_isolated_embedding_experiment.ipynb
 04_generate_llm_context_sentences.ipynb
 05_contextual_embedding_experiment.ipynb
+06_triplet_probe_experiment.ipynb
 ```
 
 For a full rerun:
@@ -310,6 +367,8 @@ For a full rerun:
 4. Run the isolated embedding notebooks.
 5. Set `OPENCODE_API_KEY` before generating context sentences.
 6. Run the contextual embedding notebook after context sentences are available.
+7. Generate `data/processed/triplet_stimulus_with_tokenization.csv` if needed.
+8. Run the triplet probe notebook as the final follow-up analysis.
 
 Model inference can take several minutes depending on hardware and whether Hugging Face model weights are already cached. The notebooks prefer Apple Silicon MPS when available, then CUDA, then CPU.
 
@@ -337,6 +396,17 @@ Best contextual result currently present:
 |---|---|---:|---|---:|---:|
 | contextual | BERTurk | 7 | first | 0.5275 | 500 |
 
+Triplet probe headline results currently present:
+
+| Robustness subset | Model | Layer | Pooling | Mean delta | Triplets |
+|---|---|---:|---|---:|---:|
+| all triplets | BERTurk | 1 | first | 0.3699 | 60 |
+| all triplets | XLM-R | 1 | first | 0.3869 | 60 |
+| all triplets | mBERT | 1 | first | 0.6366 | 60 |
+| BERTurk all-split only | BERTurk | 1 | first | 0.6305 | 13 |
+
+The triplet probe results are root-dominant in the current outputs: words sharing the same root are more similar than words sharing only the same suffix. The BERTurk all-split subset is small, so the probe should be described as exploratory robustness evidence.
+
 These values are a snapshot of the checked-in/generated CSV outputs, not hard-coded conclusions. Re-run the notebooks after changing data, sentence generation, model settings, layers, or pooling strategies.
 
 ## Methodological Notes
@@ -354,6 +424,22 @@ The contextual condition is designed to better match the way BERT-like models no
 ### Fragmentation analysis
 
 The project treats tokenization fragmentation as a descriptive and moderating variable. A split word or a high subtoken count does not automatically cause lower semantic performance, but it can help explain when and where pooling strategies become less reliable.
+
+### Triplet probe
+
+The triplet probe is an isolated-word follow-up analysis. It does not use AnlamVer human ratings directly. Instead, it constructs controlled Turkish triplets and asks whether shared root identity or shared suffix identity contributes more to model similarity.
+
+For each triplet:
+
+```text
+A+x  and  A+y  share the same root.
+A+x  and  B+x  share the same suffix.
+delta = cos(A+x, A+y) - cos(A+x, B+x)
+```
+
+Positive `delta` values indicate root-dominant representations. Negative values would indicate suffix-dominant representations. The current generated results are positive across the main model summaries and remain positive under stricter tokenization robustness filters.
+
+A key caveat is that BERTurk splits all three words in only a minority of the current 60 triplets. For that reason, the probe is best framed as mechanistic and exploratory: it supports the interpretation that first pooling captures stem/root information, but the main thesis result remains the AnlamVer correlation analysis.
 
 ### Evaluation metric
 
