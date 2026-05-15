@@ -1,0 +1,4 @@
+model,mean_pair_total_subtoken_count,median_pair_total_subtoken_count,mean_pair_max_subtoken_count,mean_pair_avg_subtoken_char_length,mean_word1_subtoken_count_per_char,mean_word2_subtoken_count_per_char
+berturk,3.092,3.0,1.826,4.613028571428571,0.23585126808176343,0.23534266615737204
+mbert,5.496,5.0,3.258,2.5287520202020204,0.4228895717629464,0.42390557155263037
+xlmr,4.03,4.0,2.438,3.6581626984126983,0.30724689622383117,0.30826325471913707
