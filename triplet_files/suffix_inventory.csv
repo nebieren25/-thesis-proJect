@@ -1,0 +1,7 @@
+category,label,template,form_after_ev_ince,form_after_kitap_kalın
+inflectional,PLURAL,lAr,ler,lar
+inflectional,LOCATIVE,DA,de,ta
+inflectional,ABLATIVE,DAn,den,tan
+light_deriv,WITH,lI,li,lı
+light_deriv,NOMINAL,lIk,lik,lık
+strong_deriv,WITHOUT,sIz,siz,sız
