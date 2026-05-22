@@ -85,6 +85,7 @@ The raw CSV uses the original AnlamVer formatting, including semicolon separator
 |-- 07_results_synthesis_analysis.ipynb
 |-- 08_final_results_figures.ipynb
 |-- 09_random_embedding_baseline.ipynb
+|-- 10_pooling_bootstrap_tests.ipynb
 |-- data/
 |   |-- raw/
 |   |   `-- anlamver-final.csv
@@ -437,6 +438,40 @@ Current checked result:
 
 The result is close to zero and is safe to report as a chance-level lower-bound baseline. It should remain clearly separated from the transformer model results and should not be integrated into the main model comparison tables unless explicitly labelled as `random_baseline`.
 
+### 10. Pooling Bootstrap Tests
+
+Notebook:
+
+```text
+10_pooling_bootstrap_tests.ipynb
+```
+
+Purpose:
+
+- Run a focused paired bootstrap robustness test for the main thesis configuration only.
+- Use contextual BERTurk layer `7` from the existing `0501` pair-level output.
+- Pivot the pair-level table so each AnlamVer word pair has `first`, `mean`, `last`, and `max` cosine-similarity columns.
+- Compare Spearman rho for first-subtoken pooling against `mean`, `last`, and `max`.
+- Bootstrap over the same 500 AnlamVer word pairs with replacement using 5,000 resamples.
+- Report percentile 95% confidence intervals for `delta_rho = rho_first - rho_other`.
+- Report empirical bootstrap p-values without writing impossible exact zeros, and include plus-one corrected p-values.
+
+Main output:
+
+```text
+outputs/tables/1001-pooling_bootstrap_tests.csv
+```
+
+Current checked result:
+
+| Comparison | rho first | rho other | delta rho | 95% bootstrap CI | corrected two-sided p |
+|---|---:|---:|---:|---|---:|
+| `first_vs_mean` | 0.5275 | 0.4260 | 0.1015 | [0.0605, 0.1449] | 0.000400 |
+| `first_vs_last` | 0.5275 | 0.4139 | 0.1136 | [0.0657, 0.1637] | 0.000400 |
+| `first_vs_max` | 0.5275 | 0.3377 | 0.1899 | [0.1359, 0.2468] | 0.000400 |
+
+All three confidence intervals exclude zero. This supports the thesis claim that first-subtoken pooling is reliably better than the other pooling strategies in the main contextual BERTurk layer-7 configuration. This notebook does not run transformer models and does not test every model/layer/condition combination.
+
 ## Installation
 
 Create and activate a Python environment:
@@ -486,6 +521,7 @@ Recommended execution order:
 07_results_synthesis_analysis.ipynb
 08_final_results_figures.ipynb
 09_random_embedding_baseline.ipynb
+10_pooling_bootstrap_tests.ipynb
 ```
 
 For a full rerun:
@@ -501,6 +537,7 @@ For a full rerun:
 9. Run the results synthesis notebook to create thesis-ready `070x` tables and figures.
 10. Run the final results figures notebook to create the latest additive `0801` tables and figures.
 11. Run the random embedding baseline notebook only as a separate lower-bound sanity check. Do not merge it into the main transformer result tables unless it is clearly labelled as `random_baseline`.
+12. Run the pooling bootstrap test notebook as a focused robustness check for the main contextual BERTurk layer-7 first-pooling result.
 
 Model inference can take several minutes depending on hardware and whether Hugging Face model weights are already cached. The notebooks prefer Apple Silicon MPS when available, then CUDA, then CPU.
 
@@ -533,6 +570,14 @@ outputs/results/0902-random_baseline_summary.csv
 ```
 
 The random baseline has `spearman_rho = 0.009339` and `p_value = 0.834981` in the current output snapshot. This is effectively near zero, as expected for vectors with no lexical or semantic information. Treat it only as a lower-bound sanity check, not as a transformer model result.
+
+Focused bootstrap robustness file:
+
+```text
+outputs/tables/1001-pooling_bootstrap_tests.csv
+```
+
+The pooling bootstrap test uses the existing contextual pair-level similarities in `outputs/results/0501-contextual_all_models_pair_similarities.csv`. It only evaluates the main thesis configuration: contextual BERTurk, layer `7`. In the current output snapshot, first pooling beats `mean`, `last`, and `max` pooling with positive observed `delta_rho` values and 95% bootstrap confidence intervals that exclude zero. Empirical p-values are reported as lower bounds when no bootstrap sample crosses zero, and plus-one corrected p-values are included for reporting.
 
 Canonical synthesis files:
 
@@ -630,6 +675,16 @@ Model averages across layers and pooling strategies:
 
 These tables show that the original expectation that mean pooling would dominate is not supported. The most defensible interpretation is instead that first-subtoken pooling is especially useful for Turkish word-level similarity in this setup, likely because the first subtoken often preserves root/stem information.
 
+Focused bootstrap robustness for the headline contextual BERTurk layer-7 result:
+
+| Comparison | rho first | rho other | delta rho | 95% bootstrap CI | corrected one-sided p | corrected two-sided p |
+|---|---:|---:|---:|---|---:|---:|
+| `first_vs_mean` | 0.5275 | 0.4260 | 0.1015 | [0.0605, 0.1449] | 0.000200 | 0.000400 |
+| `first_vs_last` | 0.5275 | 0.4139 | 0.1136 | [0.0657, 0.1637] | 0.000200 | 0.000400 |
+| `first_vs_max` | 0.5275 | 0.3377 | 0.1899 | [0.1359, 0.2468] | 0.000200 | 0.000400 |
+
+This robustness check should be used to support the specific claim that first pooling is reliably better than the other pooling strategies in the main thesis configuration. It should not be generalized to every model, layer, or input condition.
+
 ### Contextual gain
 
 The contextual condition improves many configurations, especially around layer 7:
@@ -698,12 +753,13 @@ This section is intended for future thesis-writing sessions, including sessions 
 9. A synthesis notebook consolidated the results into thesis-ready `070x` tables and figures.
 10. A final-results notebook added additive `0801` tables/figures, mutually exclusive clean/one-word/both-words fragmentation summaries, contextual-minus-isolated delta rankings, and triplet-probe caveat columns.
 11. A random embedding baseline was added as a separate `090x` lower-bound sanity check. Its near-zero Spearman correlation confirms that random vector similarities do not systematically align with human AnlamVer similarity judgments.
+12. A focused paired bootstrap test was added as a `1001` robustness table for the main contextual BERTurk layer-7 result. It shows that first pooling outperforms mean, last, and max pooling with confidence intervals that exclude zero.
 
 ### Hypothesis status
 
 | Hypothesis | Status | Evidence |
 |---|---|---|
-| H1: Mean pooling should outperform first/last pooling. | Not supported. | First pooling is the best headline strategy in both isolated and contextual conditions. Mean pooling is competitive only in some BERTurk layer-12 settings. |
+| H1: Mean pooling should outperform first/last pooling. | Not supported. | First pooling is the best headline strategy in both isolated and contextual conditions. Mean pooling is competitive only in some BERTurk layer-12 settings. The focused paired bootstrap test for contextual BERTurk layer 7 shows first pooling reliably exceeds mean, last, and max pooling. |
 | H2: Fragmentation should hurt naive pooling. | Partially supported. | For BERTurk best configurations, clean-pair correlations are higher than split-pair correlations. However, this should be framed as descriptive/moderating evidence, not causal proof. |
 | H3: Contextual sentence averaging should improve deeper/middle-layer representations. | Supported. | The largest gain is BERTurk layer 7 first pooling, from 0.3151 isolated to 0.5275 contextual. |
 | H4: Middle layers should perform best. | Supported mainly for contextual embeddings. | Contextual layer 7 has the best average rho. Isolated results are less consistent and have a strong layer-1 BERTurk first-pooling result. |
@@ -733,6 +789,7 @@ The triplet probe strengthens this interpretation but should not be overclaimed.
 - BERTurk substantially outperforms mBERT and XLM-R on this Turkish similarity task.
 - Contextual sentence averaging improves the strongest BERTurk middle-layer result.
 - First pooling is consistently strong and contradicts the initial expectation that mean pooling would dominate.
+- In the main contextual BERTurk layer-7 configuration, paired bootstrap confidence intervals support first pooling over mean, last, and max pooling.
 - Fragmentation is associated with weaker BERTurk clean-vs-split performance, but this should be treated cautiously.
 - The triplet probe supports a root-dominant explanation for first pooling, but only as exploratory evidence.
 - The random embedding baseline is close to zero and can be reported as a chance-level lower-bound sanity check when clearly separated from transformer results.
@@ -741,6 +798,7 @@ The triplet probe strengthens this interpretation but should not be overclaimed.
 
 - Do not claim that fragmentation causally lowers semantic performance without additional controls.
 - Do not claim that first pooling is universally best for all Turkish NLP tasks.
+- Do not generalize the focused bootstrap test beyond contextual BERTurk layer 7; it is a robustness check for the headline configuration, not a full bootstrap analysis of all configurations.
 - Do not claim that BERTurk fully captures human semantic similarity; the best rho is moderate, not near-perfect.
 - Do not treat the triplet probe as the main evidence; the main evidence remains the AnlamVer Spearman analysis.
 - Do not interpret generated context sentences as natural corpus data; they are controlled LLM-generated contexts.
@@ -787,6 +845,31 @@ The main metric is Spearman rank correlation between:
 
 Spearman correlation is used because the experiment asks whether model similarities preserve the human ranking of word-pair similarity.
 
+### Pooling bootstrap robustness test
+
+The pooling bootstrap test is a focused robustness analysis for the headline configuration: contextual BERTurk layer `7`. It reads only the existing pair-level contextual output:
+
+```text
+outputs/results/0501-contextual_all_models_pair_similarities.csv
+```
+
+The notebook pivots the table to one row per AnlamVer pair and one cosine-similarity column per pooling strategy. For each comparison, it computes:
+
+```text
+delta_rho = rho_first - rho_other
+```
+
+Then it samples the 500 word pairs with replacement for 5,000 bootstrap iterations, recomputing both Spearman correlations on every resample. The output table reports percentile 95% confidence intervals, empirical one-sided and two-sided p-values, and plus-one corrected p-values.
+
+When no bootstrap samples cross zero, the empirical p-value should not be written as exactly `0.0`. The current output reports those empirical values as lower bounds and provides corrected p-values:
+
+```text
+p_one_sided_corrected = (count_delta_leq_0 + 1) / (n_bootstrap + 1)
+p_two_sided_corrected = min(1.0, 2 * min(corrected lower-tail, corrected upper-tail))
+```
+
+This test strengthens the specific claim that first pooling is reliably better than the other pooling strategies in the main thesis configuration. It does not replace the broader descriptive comparison across models, layers, and conditions.
+
 ### Random baseline
 
 The random baseline assigns every unique AnlamVer word a fixed-seed random 768-dimensional vector and computes cosine similarity for the same 500 word pairs used in the main experiments. Because the vectors contain no lexical, morphological, or semantic information, the expected Spearman correlation with human `Sim` scores is close to zero.
@@ -800,6 +883,8 @@ The main embedding notebooks set random seeds for Python, NumPy, and PyTorch whe
 The context sentence generation notebook is less deterministic because it calls an external LLM endpoint. To keep this step auditable, it saves raw JSONL responses and parsed validation outputs. Downstream contextual experiments should use the saved `data/processed/context_sentences_llm.csv` file for stable analysis.
 
 The random baseline notebook uses `seed = 42` and writes only `0901` and `0902` outputs. It does not run transformer models and does not modify the `030x`, `050x`, `060x`, `070x`, or `080x` result files.
+
+The pooling bootstrap notebook uses `seed = 20260522`, writes only `outputs/tables/1001-pooling_bootstrap_tests.csv`, and does not run transformer models. It uses the already generated `0501` contextual pair-level output.
 
 ## Data and Secret Handling
 
