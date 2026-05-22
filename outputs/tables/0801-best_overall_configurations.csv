@@ -1,0 +1,13 @@
+rank_overall,input_condition,model,model_name,layer,pooling,spearman_rho,p_value,n_pairs
+1,contextual,BERTurk,dbmdz/bert-base-turkish-cased,7,first,0.5275383971276283,3.630230351379531e-37,500
+2,contextual,BERTurk,dbmdz/bert-base-turkish-cased,1,first,0.4554684322329078,5.6082685503002985e-27,500
+3,contextual,BERTurk,dbmdz/bert-base-turkish-cased,12,first,0.4526485971827697,1.2598318235046884e-26,500
+4,contextual,BERTurk,dbmdz/bert-base-turkish-cased,12,mean,0.4504409264325345,2.3616422192235264e-26,500
+5,isolated,BERTurk,dbmdz/bert-base-turkish-cased,1,first,0.4266940148626279,1.533853159284731e-23,500
+6,contextual,BERTurk,dbmdz/bert-base-turkish-cased,7,mean,0.4260247203619244,1.827595555839097e-23,500
+7,contextual,BERTurk,dbmdz/bert-base-turkish-cased,7,last,0.4139007002759023,4.0854903464803014e-22,500
+8,contextual,BERTurk,dbmdz/bert-base-turkish-cased,12,last,0.407715622058125,1.90000175818101e-21,500
+9,isolated,BERTurk,dbmdz/bert-base-turkish-cased,12,mean,0.3562642209728675,2.077249297802025e-16,500
+10,isolated,BERTurk,dbmdz/bert-base-turkish-cased,12,first,0.3560348819612285,2.1776679857602727e-16,500
+11,contextual,BERTurk,dbmdz/bert-base-turkish-cased,12,max,0.3527321114141784,4.2797654263953804e-16,500
+12,isolated,BERTurk,dbmdz/bert-base-turkish-cased,12,last,0.3406451994872275,4.7451148104275415e-15,500

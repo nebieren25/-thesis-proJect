@@ -1,0 +1,5 @@
+input_condition,model,layer,pooling,fragmentation_group,n_pairs,spearman_rho,mean_pair_total_subtoken_count,mean_pair_max_subtoken_count
+isolated,BERTurk,1,first,clean,225,0.5225130902830277,2.0,1.0
+isolated,BERTurk,1,first,split,275,0.24155202868402698,3.9854545454545454,2.501818181818182
+contextual,BERTurk,7,first,clean,225,0.5755713898938393,2.0,1.0
+contextual,BERTurk,7,first,split,275,0.41028675598603487,3.9854545454545454,2.501818181818182

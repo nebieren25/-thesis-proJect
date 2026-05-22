@@ -1,0 +1,7 @@
+input_condition,model,model_name,layer,pooling,spearman_rho,p_value,n_pairs,rank_within_condition
+isolated,BERTurk,dbmdz/bert-base-turkish-cased,1,first,0.4266940148626279,1.533853159284731e-23,500,1
+isolated,mBERT,bert-base-multilingual-cased,12,first,0.1545530279057371,0.0005241109973414,500,13
+isolated,XLM-R,xlm-roberta-base,1,first,0.1211717120011311,0.0066737019088591,500,16
+contextual,BERTurk,dbmdz/bert-base-turkish-cased,7,first,0.5275383971276283,3.630230351379531e-37,500,1
+contextual,mBERT,bert-base-multilingual-cased,7,last,0.244137610712835,3.2150297012396584e-08,500,13
+contextual,XLM-R,xlm-roberta-base,7,first,0.2478031363765112,1.9657533381329395e-08,500,12

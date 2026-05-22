@@ -1,0 +1,2 @@
+baseline_name,embedding_dim,seed,n_words,n_pairs,spearman_rho,p_value
+random_baseline,768,42,317,500,0.009339416128543004,0.8349810324778669
